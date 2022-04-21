@@ -14,6 +14,7 @@ export * from './nprogress';
 export * from './paragraph';
 export * from './pre';
 export * from './remix-link';
+export * from './remix-seo';
 export * from './scroll-area';
 export * from './theme-provider';
 export * from './theme-switcher';

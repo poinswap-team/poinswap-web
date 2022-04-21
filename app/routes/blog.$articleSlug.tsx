@@ -1,11 +1,12 @@
 import parse from 'html-react-parser';
 import { json, useLoaderData } from 'remix';
 
+import { Image } from '~/components';
 import { QUERY_ALL_ARTICLES, QUERY_ONE_ARTICLE_BY_SLUG } from '~/graphql';
 import { graphcmsClient } from '~/lib';
 
-import type { SEOHandle } from '@balavishnuvj/remix-seo';
 import type { LoaderFunction, MetaFunction } from 'remix';
+import type { SEOHandle } from '~/components';
 
 export const handle: SEOHandle = {
   getSitemapEntries: async () => {
@@ -18,7 +19,6 @@ export const handle: SEOHandle = {
   },
 };
 
-// @ts-ignore
 export const meta: MetaFunction = ({ data }) => {
   const { article } = data;
 
@@ -56,9 +56,10 @@ export default function BlogArticlePage() {
   const { article } = useLoaderData<LoaderData>();
 
   return (
-    <div>
-      <pre>{JSON.stringify(article, null, 2)}</pre>
-      <div> {parse(String(article?.content?.html))}</div>
+    <div className="prose dark:prose-invert">
+      <Image src={article.coverImage.url} alt={article.title} />
+      <h1>{article.title}</h1>
+      <div>{parse(String(article?.content?.html))}</div>
     </div>
   );
 }
