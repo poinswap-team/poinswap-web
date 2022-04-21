@@ -2,7 +2,7 @@ import clsx from 'clsx';
 
 import { MenuNavigation } from './menu';
 
-import { RemixLink, RemixNavLink, ThemeSwitcher } from '~/components';
+import { Logo, RemixLink, RemixNavLink, ThemeSwitcher } from '~/components';
 import { configNavigationLinks } from '~/configs';
 
 import type { FunctionComponent } from 'react';
@@ -21,7 +21,7 @@ export const NavigationBar: FunctionComponent<NavigationBarProps> = () => {
             to="/"
             className="text-2xl font-black tracking-wide hover:text-primary-500"
           >
-            Poinswap
+            <Logo />
           </RemixLink>
         </div>
 

@@ -7,6 +7,7 @@ export * from './footer';
 export * from './heading';
 export * from './image';
 export * from './layout';
+export * from './logo';
 export * from './menu';
 export * from './navigation-bar';
 export * from './nprogress';
