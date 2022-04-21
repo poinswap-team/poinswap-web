@@ -10,10 +10,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        info: colors.blue,
-        success: colors.green,
-        warning: colors.yellow,
-        error: colors.red,
+        // info: colors.blue,
+        // success: colors.green,
+        // warning: colors.yellow,
+        // error: colors.red,
         brand: {
           DEFAULT: '#87E4FC',
           50: '#FFFFFF',
@@ -37,12 +37,12 @@ module.exports = {
   },
   plugins: [
     require('@tailwindcss/typography'),
-    require('@tailwindcss/forms'),
+    // require('@tailwindcss/forms'),
     require('@tailwindcss/line-clamp'),
-    require('@tailwindcss/aspect-ratio'),
+    // require('@tailwindcss/aspect-ratio'),
     require('@vechaiui/core')({
       cssBase: true,
-      colors: ['info', 'success', 'warning', 'error'],
+      // colors: ['info', 'success', 'warning', 'error'],
     }),
     plugin(function ({ matchUtilities, theme }) {
       matchUtilities(

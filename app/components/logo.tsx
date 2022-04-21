@@ -6,7 +6,7 @@ interface LogoProps {}
 
 export const Logo: FunctionComponent<LogoProps> = () => {
   return (
-    <div className="align-center hover:opacity flex gap-1">
+    <div className="hover:opacity flex items-center gap-1">
       <Image
         alt="PON"
         src="/assets/logos/poinswap-logo-slime.png"
@@ -20,7 +20,7 @@ export const Logo: FunctionComponent<LogoProps> = () => {
 export const LogoSpan = () => {
   return (
     <span
-      className="text-3xl text-brand-500"
+      className="text-3xl tracking-tighter text-brand-500"
       style={{
         fontFamily: 'Gluten, sans-serif',
         WebkitTextStroke: '1px #0078A1',
