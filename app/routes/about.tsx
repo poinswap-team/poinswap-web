@@ -24,7 +24,7 @@ export default function AboutRoute() {
 
       <p>Your friendly neighborhood DEX.</p>
 
-      <Image src="/screenshot.png" alt="Screenshot" />
+      <Image src="/assets/opengraph/poinswap-og.jpg" alt="Screenshot" />
 
       <h2>Links</h2>
       <ul>
