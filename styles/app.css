@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  a:focus {
+    @apply outline-none;
+  }
+  a:focus-visible {
+    @apply focus:ring-2 focus:ring-primary-500 focus:ring-offset-2;
+    /* @apply rounded-base; // optional if want to be customizable */
+  }
+}
+
+@layer components {
+  .flex-section {
+    @apply flex w-full flex-wrap gap-2 py-1;
+  }
+
+  .scroll-area-corner {
+    @apply bg-primary-800/20;
+  }
+
+  .scroll-area-scrollbar {
+    @apply flex touch-none select-none bg-primary-800/20 p-[2px] transition-all duration-200 ease-out hover:bg-primary-800/30;
+  }
+
+  .scroll-area-scrollbar[data-orientation='vertical'] {
+    @apply w-3;
+  }
+
+  .scroll-area-scrollbar[data-orientation='horizontal'] {
+    @apply h-3 flex-col;
+  }
+
+  .scroll-area-thumb {
+    @apply relative flex-1 cursor-pointer rounded-base bg-primary-900;
+  }
+
+  .scroll-area-thumb::before {
+    @apply absolute top-1/2 left-1/2 h-full min-h-[50px] w-full min-w-[50px] translate-x-1/2 translate-y-1/2;
+    content: '';
+  }
+}
