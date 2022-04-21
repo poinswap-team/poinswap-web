@@ -4,7 +4,7 @@ export const configApp: Config = {
   theme: {
     colorScheme: 'day',
     density: 'comfortable',
-    radius: '0.375rem',
+    radius: '0.75rem',
     cursorPointer: true,
   },
 };
