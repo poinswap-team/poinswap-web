@@ -26,9 +26,9 @@ export const links: LinksFunction = () => {
 
 export const meta: MetaFunction = () => {
   return {
-    title: 'Poinswap - Remix Tailwind Starter Kit - by @mhaidarhanif',
+    title: 'Poinswap - Pioneering RetailFi',
     description:
-      'Poinswap is a Remix starter kit with Tailwind CSS family of libraries',
+      'Pioneering RetailFi and buy metaverse token with your friendly neighborhood Decentralized Exchange (DEX)',
     charset: 'utf-8',
     viewport: 'width=device-width,initial-scale=1',
   };

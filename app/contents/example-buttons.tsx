@@ -119,7 +119,7 @@ export const ExampleButtons: FunctionComponent<ExampleButtonsProps> = () => {
           HTML Button
         </button>
         <a
-          href="https://mhaidarhanif.com"
+          href="https://poinswap.com"
           target="_blank"
           rel="noreferrer"
           className="btn-solid btn btn-md rounded-2xl border-4 border-primary-100 hover:border-primary-200"

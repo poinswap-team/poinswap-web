@@ -1,4 +1,4 @@
-import { Anchor } from '~/components';
+import { Anchor, RemixLink } from '~/components';
 
 import type { FunctionComponent } from 'react';
 
@@ -9,20 +9,16 @@ export const Footer: FunctionComponent<FooterProps> = () => {
   const year = date.getFullYear();
 
   return (
-    <footer className="mt-16 border-t border-slate-200 dark:border-slate-200/5">
-      <div className="flex py-4">
-        <p className="space-x-1">
+    <footer className="mt-16">
+      <div className="flex justify-center py-4">
+        <p className="space-x-1 text-center">
           <span>&copy;</span>
           <span>{year}</span>
-          <Anchor href="https://mhaidarhanif.com">M Haidar Hanif</Anchor>
+          <Anchor href="https://poinswap.com">Poinswap</Anchor>
           <span>•</span>
-          <Anchor href="https://github.com/mhaidarhanif/poinswap">
-            <code>poinswap</code>
-          </Anchor>
+          <RemixLink to="/twitter">Twitter</RemixLink>
           <span>•</span>
-          <Anchor href="https://twitter.com/mhaidarhanif">Twitter</Anchor>
-          <span>•</span>
-          <Anchor href="https://github.com/mhaidarhanif">GitHub</Anchor>
+          <RemixLink to="/discord">Discord</RemixLink>
         </p>
       </div>
     </footer>

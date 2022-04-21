@@ -9,7 +9,7 @@ export const { getSession, commitSession, destroySession } =
       name: '__session',
 
       // all of these are optional
-      // domain: "mhaidarhanif.com",
+      // domain: "poinswap.com",
       expires: new Date(Date.now() + 60_000),
       httpOnly: true,
       maxAge: 60,

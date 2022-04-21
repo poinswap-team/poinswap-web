@@ -1,19 +1,9 @@
-import { Anchor } from '~/components';
-
 export const Intro = () => {
   return (
     <div className="prose dark:prose-invert">
-      <h1>Poinswap, a Remix Tailwind Starter Kit</h1>
       <p>
-        <b>Poinswap</b> is a Remix starter kit with Tailwind family of
-        libraries. Made by{' '}
-        <Anchor href="https://mhaidarhanif.com">M Haidar Hanif</Anchor> (
-        <Anchor href="https://github.com/mhaidarhanif">@mhaidarhanif</Anchor>).
-      </p>
-      <p>
-        The goal is to have several examples and demos to combine the best
-        Tailwind-related ecosystem such as Tailwind CSS v3, Tailwind UI,
-        Headless UI, Radix UI, Vechai UI, and more.
+        Pioneering RetailFi with user friendly and curated decentralized
+        exchange (DEX)
       </p>
     </div>
   );

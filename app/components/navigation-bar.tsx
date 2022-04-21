@@ -17,7 +17,6 @@ export const NavigationBar: FunctionComponent<NavigationBarProps> = () => {
     >
       <div className="container mx-auto flex flex-wrap items-center justify-between">
         <div className="flex space-x-4">
-          <ThemeSwitcher />
           <RemixLink
             to="/"
             className="text-2xl font-black tracking-wide hover:text-primary-500"
@@ -50,8 +49,8 @@ export const NavigationBar: FunctionComponent<NavigationBarProps> = () => {
         </div>
 
         <div className="flex space-x-2">
-          <NavigationBarAuth />
           <NavigationBarMenu />
+          <ThemeSwitcher />
         </div>
       </div>
     </nav>
@@ -60,7 +59,9 @@ export const NavigationBar: FunctionComponent<NavigationBarProps> = () => {
 
 interface NavigationBarAuthProps {}
 
-const NavigationBarAuth: FunctionComponent<NavigationBarAuthProps> = () => {
+export const NavigationBarAuth: FunctionComponent<
+  NavigationBarAuthProps
+> = () => {
   return (
     <div id="navigation-bar-auth" className="hidden space-x-2 lg:flex">
       <RemixLink
