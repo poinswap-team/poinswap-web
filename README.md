@@ -1,17 +1,15 @@
-# Rewinds - Remix Tailwind Starter Kit
+# Poinswap
 
-Rewinds is a Remix starter kit with Tailwind CSS v3 family of libraries.
+Primary website of Poinswap.
 
-Example demo to combine the best Tailwind-related ecosystem such as Tailwind
-CSS, Headless UI, Radix UI, Vechai UI, and more.
+- Production: [poinswap.com](https://poinswap.com)
+- Preview: [v2.poinswap.com](https://v2.poinswap.com)
 
 Features:
 
 - Remix as the React framework
 - Tailwind CSS using Vechai UI as primary components
 - Theme switcher and persist theme with a session cookie
-
-Preview: [rewinds.mhaidarhanif.com](https://rewinds.mhaidarhanif.com)
 
 ![Screenshot](public/screenshot.png)
 

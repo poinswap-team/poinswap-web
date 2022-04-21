@@ -16,8 +16,8 @@ export const Footer: FunctionComponent<FooterProps> = () => {
           <span>{year}</span>
           <Anchor href="https://mhaidarhanif.com">M Haidar Hanif</Anchor>
           <span>•</span>
-          <Anchor href="https://github.com/mhaidarhanif/rewinds">
-            <code>rewinds</code>
+          <Anchor href="https://github.com/mhaidarhanif/poinswap">
+            <code>poinswap</code>
           </Anchor>
           <span>•</span>
           <Anchor href="https://twitter.com/mhaidarhanif">Twitter</Anchor>

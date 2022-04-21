@@ -19,10 +19,10 @@ export default function AboutRoute() {
 
   return (
     <div className="prose dark:prose-invert">
-      <h1>About Rewinds</h1>
+      <h1>About Poinswap</h1>
       <p>
-        <Anchor href="https://rewinds.mhaidarhanif.com">
-          Rewinds = Remix Tailwind Starter Kit
+        <Anchor href="https://poinswap.mhaidarhanif.com">
+          Poinswap = Remix Tailwind Starter Kit
         </Anchor>{' '}
         by <Anchor href="https://mhaidarhanif.com">M Haidar Hanif</Anchor>
       </p>
@@ -34,14 +34,14 @@ export default function AboutRoute() {
       <ul>
         <li>
           GitHub repo:{' '}
-          <Anchor href="https://github.com/mhaidarhanif/rewinds">
-            mhaidarhanif/rewinds
+          <Anchor href="https://github.com/mhaidarhanif/poinswap">
+            mhaidarhanif/poinswap
           </Anchor>
         </li>
         <li>
           Preview demo:{' '}
-          <Anchor href="https://rewinds.mhaidarhanif.com">
-            rewinds.mhaidarhanif.com
+          <Anchor href="https://poinswap.mhaidarhanif.com">
+            poinswap.mhaidarhanif.com
           </Anchor>
         </li>
       </ul>
