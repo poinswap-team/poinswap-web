@@ -1,4 +1,6 @@
 /* eslint-disable react/require-default-props */
+import { clsx } from '~/utils';
+
 import type { FunctionComponent } from 'react';
 
 interface ImageProps {
@@ -12,5 +14,5 @@ export const Image: FunctionComponent<ImageProps> = ({
   alt,
   className,
 }) => {
-  return <img src={src} alt={alt} className={className} />;
+  return <img src={src} alt={alt} className={clsx('rounded-md', className)} />;
 };
