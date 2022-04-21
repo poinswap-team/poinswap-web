@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 @layer base {
+  a {
+    @apply no-underline;
+  }
   a:focus {
     @apply outline-none;
   }

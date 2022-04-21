@@ -1,5 +1,6 @@
 import { json, useLoaderData } from 'remix';
 
+import { Image, RemixLink } from '~/components';
 import { QUERY_ALL_ARTICLES } from '~/graphql';
 import { graphcmsClient } from '~/lib';
 
@@ -45,9 +46,21 @@ export default function BlogRoute() {
   const { articles } = useLoaderData<LoaderData>();
 
   return (
-    <div className="prose dark:prose-invert">
-      <h1>Blog</h1>
-      <pre>{JSON.stringify(articles, null, 2)}</pre>
+    <div>
+      <h1 className="mb-8 text-5xl font-bold">Blog Articles</h1>
+      <div className="flex flex-col space-y-12">
+        {articles.map((article) => {
+          return (
+            <RemixLink key={article.id} to={article.slug}>
+              <div className="flex flex-col space-y-4">
+                <Image src={article.coverImage.url} alt={article.title} />
+                <h2 className="text-3xl font-bold">{article.title}</h2>
+                <p className="text-md">{article.summary}</p>
+              </div>
+            </RemixLink>
+          );
+        })}
+      </div>
     </div>
   );
 }
