@@ -21,11 +21,9 @@ export const ThemeSwitcher = () => {
     setDensity,
     density,
   } = useTheme();
-  const toast = useToast();
 
   const changeColorScheme = (value: string) => {
     setColorScheme(value);
-    toast({ message: `Changed theme to ${value}` });
   };
 
   return (

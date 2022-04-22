@@ -1,4 +1,4 @@
-import { Anchor, ExternalLinks } from '~/components';
+import { Anchor, ExternalLinks, useTheme } from '~/components';
 
 import type { FunctionComponent } from 'react';
 
@@ -7,9 +7,21 @@ interface FooterProps {}
 export const Footer: FunctionComponent<FooterProps> = () => {
   const date = new Date();
   const year = date.getFullYear();
+  const { isLight } = useTheme();
 
   return (
-    <footer className="mt-16 flex h-[500px] flex-col items-center gap-1 pb-2">
+    <footer
+      className="mt-16 flex h-[500px] flex-col items-center gap-1 pb-2"
+      style={{
+        backgroundSize: 'cover',
+        backgroundColor: 'transparent',
+        backgroundImage: `url("${
+          isLight
+            ? '/assets/backgrounds/footer-light.png'
+            : '/assets/backgrounds/footer-dark.png'
+        }")`,
+      }}
+    >
       <div className="flex flex-col items-center space-y-4 py-4">
         <div>
           <ExternalLinks />

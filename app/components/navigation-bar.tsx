@@ -17,9 +17,9 @@ export const NavigationBar: FunctionComponent<NavigationBarProps> = () => {
   return (
     <nav
       id="navigation-bar"
-      className="mt-2 select-none rounded-base border-gray-200 bg-neutral-50 p-2 dark:bg-neutral-800 md:mt-2 md:p-4"
+      className="fixed w-full select-none border-gray-200 bg-neutral-50 p-2 dark:bg-neutral-800 md:p-4"
     >
-      <div className="container mx-auto flex flex-wrap items-center justify-between">
+      <div className="flex flex-wrap items-center justify-between">
         <div className="flex space-x-4">
           <RemixLink
             to="/"
@@ -29,7 +29,7 @@ export const NavigationBar: FunctionComponent<NavigationBarProps> = () => {
           </RemixLink>
         </div>
 
-        <div className="hidden w-full w-auto items-center justify-between lg:flex">
+        <div className="hidden w-auto items-center justify-between lg:flex">
           <ul className="flex flex-row text-sm font-medium">
             {configNavigationLinks.map((navItem) => {
               return (
@@ -53,7 +53,7 @@ export const NavigationBar: FunctionComponent<NavigationBarProps> = () => {
         </div>
 
         <div className="flex items-center space-x-2">
-          <ExternalLinks className="text-xl" />
+          <ExternalLinks className="hidden text-xl sm:flex" />
           <NavigationBarMenu />
           <ThemeSwitcher />
         </div>
