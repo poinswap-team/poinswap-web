@@ -1,8 +1,5 @@
-import clsx from 'clsx';
-
-import { MenuNavigation } from './menu';
-
 import {
+  MenuNavigation,
   ExternalLinks,
   Logo,
   RemixLink,
@@ -10,6 +7,7 @@ import {
   ThemeSwitcher,
 } from '~/components';
 import { configNavigationLinks } from '~/configs';
+import { classx } from '~/utils';
 
 import type { FunctionComponent } from 'react';
 
@@ -40,7 +38,7 @@ export const NavigationBar: FunctionComponent<NavigationBarProps> = () => {
                     end
                     to={navItem.to}
                     className={({ isActive }) => {
-                      return clsx(
+                      return classx(
                         isActive && 'text-primary-500',
                         'p-2 font-bold'
                       );

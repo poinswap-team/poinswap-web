@@ -5,7 +5,7 @@ import React from 'react';
 
 import { RemixNavLink } from '~/components';
 import { configNavigationLinksMenu } from '~/configs';
-import { clsx } from '~/utils';
+import { classx } from '~/utils';
 
 import type { FunctionComponent } from 'react';
 
@@ -38,7 +38,7 @@ export const MenuNavigation: FunctionComponent<MenuNavigationProps> = () => {
           leaveTo="transform opacity-0 scale-90"
         >
           <Menu.Items
-            className={clsx(
+            className={classx(
               'absolute right-0 z-dropdown mt-2 w-56 min-w-max origin-top-right rounded-md shadow-sm outline-none',
               'border border-gray-200 bg-white',
               'dark:border-gray-700 dark:bg-neutral-800'
@@ -55,7 +55,7 @@ export const MenuNavigation: FunctionComponent<MenuNavigationProps> = () => {
                             end
                             to={item.to}
                             className={({ isActive }) => {
-                              return clsx(
+                              return classx(
                                 'flex h-8 w-full flex-shrink-0 cursor-base items-center rounded p-2 px-3 text-left text-sm font-bold focus:outline-none',
                                 isActive &&
                                   'bg-primary-50 text-primary-500 dark:bg-neutral-900 dark:text-primary-500',
@@ -101,7 +101,7 @@ export const MenuExample: FunctionComponent<MenuExampleProps> = () => {
           leaveTo="transform opacity-0 scale-90"
         >
           <Menu.Items
-            className={clsx(
+            className={classx(
               'absolute right-0 z-dropdown mt-2 w-56 min-w-max origin-top-right rounded-md shadow-sm outline-none',
               'border border-gray-200 bg-white',
               'dark:border-gray-700 dark:bg-neutral-800'
@@ -117,7 +117,7 @@ export const MenuExample: FunctionComponent<MenuExampleProps> = () => {
                         type="button"
                         disabled={disabled}
                         aria-disabled={disabled}
-                        className={clsx(
+                        className={classx(
                           'flex h-8 w-full flex-shrink-0 cursor-base items-center rounded px-3 text-left text-sm focus:outline-none',
                           active && 'bg-primary-500 text-white',
                           disabled &&
@@ -145,7 +145,7 @@ export const MenuExample: FunctionComponent<MenuExampleProps> = () => {
                         type="button"
                         disabled={disabled}
                         aria-disabled={disabled}
-                        className={clsx(
+                        className={classx(
                           'flex h-8 w-full flex-shrink-0 cursor-base items-center rounded px-3 text-left text-sm focus:outline-none',
                           active && 'bg-primary-500 text-white',
                           disabled &&

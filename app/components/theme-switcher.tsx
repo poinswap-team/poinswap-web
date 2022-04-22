@@ -6,7 +6,7 @@ import * as React from 'react';
 import { useTheme } from '~/components/theme-provider';
 import { configAvailableThemes, configAvailableRadiuses } from '~/configs';
 import { useToast } from '~/hooks';
-import { clsx } from '~/utils';
+import { classx } from '~/utils';
 
 import type { ThemeContextType } from '~/components/theme-provider';
 
@@ -88,7 +88,7 @@ export const ThemeSwitcher = () => {
                               value={theme.id}
                               style={{ backgroundColor: theme.backgroundColor }}
                               className={({ checked }) => {
-                                return clsx(
+                                return classx(
                                   'mr-2 mb-2 flex h-5 w-5 items-center justify-center rounded-full border-2 p-0',
                                   `${
                                     checked
@@ -129,7 +129,7 @@ export const ThemeSwitcher = () => {
                               key={item.name}
                               value={item.value}
                               className={({ checked }) => {
-                                return clsx(
+                                return classx(
                                   'relative inline-flex min-w-[35px] select-none appearance-none items-center justify-center whitespace-nowrap rounded-base px-0.5 py-0.5 align-middle text-xs font-semibold',
                                   `${
                                     checked
