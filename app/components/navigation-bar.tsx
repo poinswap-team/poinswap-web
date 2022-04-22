@@ -27,29 +27,29 @@ export const NavigationBar: FunctionComponent<NavigationBarProps> = () => {
           >
             <Logo />
           </RemixLink>
-        </div>
 
-        <div className="hidden w-auto items-center justify-between lg:flex">
-          <ul className="flex flex-row text-sm font-medium">
-            {configNavigationLinks.map((navItem) => {
-              return (
-                <li key={navItem.text}>
-                  <RemixNavLink
-                    end
-                    to={navItem.to}
-                    className={({ isActive }) => {
-                      return classx(
-                        isActive && 'text-primary-500',
-                        'p-2 font-bold'
-                      );
-                    }}
-                  >
-                    {navItem.text}
-                  </RemixNavLink>
-                </li>
-              );
-            })}
-          </ul>
+          <div className="hidden w-auto items-center justify-between lg:flex">
+            <ul className="flex flex-row text-sm font-medium">
+              {configNavigationLinks.map((navItem) => {
+                return (
+                  <li key={navItem.text}>
+                    <RemixNavLink
+                      end
+                      to={navItem.to}
+                      className={({ isActive }) => {
+                        return classx(
+                          isActive && 'text-primary-500',
+                          'p-2 font-bold'
+                        );
+                      }}
+                    >
+                      {navItem.text}
+                    </RemixNavLink>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
         </div>
 
         <div className="flex items-center space-x-2">
