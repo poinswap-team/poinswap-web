@@ -2,7 +2,6 @@ const colors = require('tailwindcss/colors');
 const plugin = require('tailwindcss/plugin');
 
 module.exports = {
-  mode: 'jit',
   content: [
     './app/**/*.{js,ts,jsx,tsx}',
     './node_modules/@vechaiui/**/*.{js,ts,jsx,tsx}',
@@ -48,9 +47,9 @@ module.exports = {
         { values: theme('textShadow') }
       );
     }),
-    require('@vechaiui/core')({
-      cssBase: true,
-      colors: ['info', 'success', 'warning', 'error'],
-    }),
+    // require('@vechaiui/core')({
+    //   cssBase: true,
+    //   colors: ['info', 'success', 'warning', 'error'],
+    // }),
   ],
 };
