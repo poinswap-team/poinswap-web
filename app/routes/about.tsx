@@ -1,17 +1,13 @@
 import { json, useLoaderData } from 'remix';
 
 import { Anchor, Image } from '~/components';
-import { dataStacks } from '~/data';
 
 import type { LoaderFunction } from 'remix';
-import type { StackItem } from '~/types';
 
-type LoaderData = {
-  stacks: StackItem[];
-};
+type LoaderData = {};
 
 export const loader: LoaderFunction = async () => {
-  return json({ stacks: dataStacks });
+  return json({});
 };
 
 export default function AboutRoute() {
@@ -54,7 +50,10 @@ export default function AboutRoute() {
           </Anchor>
         </li>
         <li>
-          GitHub: <Anchor href="https://github.com/poinswap">@poinswap</Anchor>
+          GitHub:{' '}
+          <Anchor href="https://github.com/poinswap">
+            github.com/poinswap
+          </Anchor>
         </li>
       </ul>
 
