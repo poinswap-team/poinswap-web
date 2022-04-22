@@ -47,9 +47,9 @@ module.exports = {
         { values: theme('textShadow') }
       );
     }),
-    // require('@vechaiui/core')({
-    //   cssBase: true,
-    //   colors: ['info', 'success', 'warning', 'error'],
-    // }),
+    require('@vechaiui/core')({
+      cssBase: true,
+      colors: ['info', 'success', 'warning', 'error'],
+    }),
   ],
 };
