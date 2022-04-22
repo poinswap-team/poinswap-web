@@ -1,4 +1,4 @@
-export const configSocialMediaLinks = [
+export const configExternalLinks = [
   { name: 'Telegram', url: 'https://t.me/PoinswapDEX' },
   { name: 'Discord', url: 'https://poinswap.com/discord' },
   { name: 'Twitter', url: 'https://poinswap.com/twitter' },

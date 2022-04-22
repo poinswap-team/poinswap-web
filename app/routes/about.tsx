@@ -15,8 +15,8 @@ export const loader: LoaderFunction = async () => {
 };
 
 export default function AboutRoute() {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const data = useLoaderData<LoaderData>();
-  console.log(data);
 
   return (
     <div className="prose dark:prose-invert">
