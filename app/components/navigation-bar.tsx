@@ -2,7 +2,13 @@ import clsx from 'clsx';
 
 import { MenuNavigation } from './menu';
 
-import { Logo, RemixLink, RemixNavLink, ThemeSwitcher } from '~/components';
+import {
+  ExternalLinks,
+  Logo,
+  RemixLink,
+  RemixNavLink,
+  ThemeSwitcher,
+} from '~/components';
 import { configNavigationLinks } from '~/configs';
 
 import type { FunctionComponent } from 'react';
@@ -25,7 +31,7 @@ export const NavigationBar: FunctionComponent<NavigationBarProps> = () => {
           </RemixLink>
         </div>
 
-        <div className="hidden w-full items-center justify-between lg:flex lg:w-auto">
+        <div className="hidden w-full w-auto items-center justify-between lg:flex">
           <ul className="mt-4 flex flex-col md:mt-0 md:flex-row md:space-x-4 md:text-sm md:font-medium">
             {configNavigationLinks.map((navItem) => {
               return (
@@ -48,7 +54,8 @@ export const NavigationBar: FunctionComponent<NavigationBarProps> = () => {
           </ul>
         </div>
 
-        <div className="flex space-x-2">
+        <div className="flex items-center space-x-2">
+          <ExternalLinks className="text-xl" />
           <NavigationBarMenu />
           <ThemeSwitcher />
         </div>

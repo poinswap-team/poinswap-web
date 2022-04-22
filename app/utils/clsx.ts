@@ -1,3 +1,5 @@
 import clsx from 'clsx';
 
-export { clsx };
+const classx = clsx;
+
+export { clsx, classx };
