@@ -30,7 +30,7 @@ export const HomeHero: FunctionComponent<HomeHeroProps> = () => {
             Pioneering RetailFi with user friendly and curated Crypto
             Decentralized Exchange (DEX)
           </h1>
-          <section className="flex-section justify-center space-x-4">
+          <section className="flex-section space-2 justify-center">
             <RemixLink
               to="/blog"
               className="btn btn-lg btn-solid rounded-base"

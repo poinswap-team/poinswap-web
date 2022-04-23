@@ -22,7 +22,11 @@ export const MenuNavigation: FunctionComponent<MenuNavigationProps> = () => {
           variant="solid"
           color="primary"
           leftIcon={
-            <Icon as={MenuIcon} label="gift" className="mr-1 h-4 w-4" />
+            <Icon
+              as={MenuIcon}
+              label="gift"
+              className="mr-1 hidden h-4 w-4 sm:block"
+            />
           }
         >
           Menu

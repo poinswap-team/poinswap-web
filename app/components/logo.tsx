@@ -20,7 +20,7 @@ export const Logo: FunctionComponent<LogoProps> = () => {
 export const LogoSpan = () => {
   return (
     <span
-      className="text-3xl uppercase tracking-tighter text-brand-500"
+      className="text-2xl uppercase tracking-tighter text-brand-500 sm:text-3xl"
       style={{
         fontFamily: 'Gluten, sans-serif',
         WebkitTextStroke: '1px #0078A1',
