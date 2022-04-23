@@ -24,7 +24,7 @@ export const Footer: FunctionComponent<FooterProps> = () => {
         <div>
           <ExternalLinks />
         </div>
-        <p className="space-1 flex">
+        <p className="flex gap-1">
           <span>&copy;</span>
           <span>{year}</span>
           <Anchor href="https://poinswap.com">Poinswap</Anchor>

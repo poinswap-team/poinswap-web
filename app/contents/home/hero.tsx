@@ -26,7 +26,7 @@ export const HomeHero: FunctionComponent<HomeHeroProps> = () => {
             Decentralized Exchange (DEX)
           </h1>
 
-          <section className="flex-section space-2 sm:justify-center">
+          <section className="flex-section gap-2 sm:justify-center sm:gap-4">
             <RemixLink
               to="/blog"
               className="btn btn-lg btn-solid rounded-base"
