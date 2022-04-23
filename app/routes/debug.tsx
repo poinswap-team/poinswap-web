@@ -6,6 +6,13 @@ import { getSession, commitSession } from '~/sessions';
 
 import type { ActionFunction, LoaderFunction } from 'remix';
 import type { Theme } from '~/types';
+import type { SEOHandle } from '~/utils';
+
+export const handle: SEOHandle = {
+  getSitemapEntries: () => {
+    return null;
+  },
+};
 
 export const loader: LoaderFunction = async ({ request }) => {
   const session = await getSession(request.headers.get('Cookie'));

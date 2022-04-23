@@ -5,7 +5,6 @@ import * as React from 'react';
 
 import { useTheme } from '~/components/theme-provider';
 import { configAvailableThemes, configAvailableRadiuses } from '~/configs';
-import { useToast } from '~/hooks';
 import { classx } from '~/utils';
 
 import type { ThemeContextType } from '~/components/theme-provider';

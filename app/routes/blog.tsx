@@ -5,7 +5,7 @@ import { QUERY_ALL_ARTICLES } from '~/graphql';
 import { graphcmsClient } from '~/lib';
 
 import type { LoaderFunction, MetaFunction } from 'remix';
-import type { SEOHandle } from '~/components';
+import type { SEOHandle } from '~/utils';
 
 export const handle: SEOHandle = {
   getSitemapEntries: async () => {
