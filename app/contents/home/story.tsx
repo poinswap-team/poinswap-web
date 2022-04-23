@@ -16,9 +16,12 @@ const StorySubscribe = () => {
   return (
     <div>
       <div className="comic-box flex flex-col items-center justify-center gap-1 space-y-4 p-8">
-        <h2 className="font-comic text-2xl">Subscribe for updates</h2>
+        <h2 className="font-comic text-center text-2xl">
+          Subscribe for updates
+        </h2>
         <Image
-          className="h-[300px]"
+          height={300}
+          className="max-h-[300px]"
           alt="Multiple Slimes"
           src="/assets/characters/slime-5-a.png"
         />

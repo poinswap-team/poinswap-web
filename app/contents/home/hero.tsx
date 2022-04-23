@@ -10,7 +10,7 @@ export const HomeHero: FunctionComponent<HomeHeroProps> = () => {
   return (
     <div
       id="home-hero-background"
-      className="mb-20 flex h-[650px] items-start justify-center"
+      className="mb-32 flex h-[650px] items-start justify-center"
       style={{
         // overflow: 'hidden',
         // backgroundPosition: 'center center',
@@ -26,11 +26,12 @@ export const HomeHero: FunctionComponent<HomeHeroProps> = () => {
     >
       <div id="home-hero-box-characters" className="px-4">
         <div className="comic-box mt-32 flex flex-col space-y-4 p-5">
-          <h1 className="font-comic max-w-[36ch] text-center text-xl leading-normal md:text-3xl">
+          <h1 className="font-comic max-w-[36ch] text-xl leading-normal sm:text-center md:text-3xl">
             Pioneering RetailFi with user friendly and curated Crypto
             Decentralized Exchange (DEX)
           </h1>
-          <section className="flex-section space-2 justify-center">
+
+          <section className="flex-section space-2 sm:justify-center">
             <RemixLink
               to="/blog"
               className="btn btn-lg btn-solid rounded-base"
