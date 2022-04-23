@@ -22,7 +22,7 @@ const StoryStart = () => {
       className="flex w-full flex-col gap-4 lg:flex-row"
     >
       <div
-        className="comic-box flex min-h-[500px] flex-col items-center justify-center gap-1 space-y-4 bg-cover p-8"
+        className="comic-box flex min-h-[500px] flex-col items-center justify-center gap-1 space-y-4 bg-cover bg-center p-8"
         style={{
           backgroundImage: `url("${
             isLight
@@ -36,6 +36,7 @@ const StoryStart = () => {
           srcNormal="/assets/characters/slime-1-a.png"
           srcHover="/assets/characters/slime-1-b.png"
           width={200}
+          className="pt-8"
         />
       </div>
 

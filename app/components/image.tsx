@@ -39,11 +39,12 @@ interface ImageInteractiveProps extends ImageProps {
 
 export const ImageInteractive: FunctionComponent<ImageInteractiveProps> = ({
   alt,
+  src,
   height,
   width,
-  src,
   srcNormal,
   srcHover,
+  className,
 }) => {
   const [source, setSource] = useState(src || srcNormal);
 
@@ -61,13 +62,13 @@ export const ImageInteractive: FunctionComponent<ImageInteractiveProps> = ({
 
   return (
     <img
-      className="cursor-pointer"
       alt={alt}
       src={source}
       height={height}
       width={width}
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
+      className={classx('cursor-pointer', className)}
     />
   );
 };
