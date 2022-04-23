@@ -1,6 +1,6 @@
 import { json, redirect, useLoaderData } from 'remix';
 
-import { H1, H2, Pre, RadixScrollArea } from '~/components';
+import { H1, H2, Layout, Pre, RadixScrollArea } from '~/components';
 import { configAvailableThemes, configApp, configThemes } from '~/configs';
 import { getSession, commitSession } from '~/sessions';
 
@@ -48,7 +48,7 @@ export default function DebugRoute() {
     useLoaderData();
 
   return (
-    <div>
+    <Layout>
       <H1>Debug</H1>
 
       <H2>Session Data</H2>
@@ -66,6 +66,6 @@ export default function DebugRoute() {
       <RadixScrollArea>
         <Pre data={availableThemes} />
       </RadixScrollArea>
-    </div>
+    </Layout>
   );
 }

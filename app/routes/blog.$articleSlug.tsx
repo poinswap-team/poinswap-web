@@ -1,7 +1,7 @@
 import parse from 'html-react-parser';
 import { json, useLoaderData } from 'remix';
 
-import { Image } from '~/components';
+import { Image, Layout } from '~/components';
 import { QUERY_ALL_ARTICLES, QUERY_ONE_ARTICLE_BY_SLUG } from '~/graphql';
 import { graphcmsClient } from '~/lib';
 
@@ -56,10 +56,10 @@ export default function BlogArticlePage() {
   const { article } = useLoaderData<LoaderData>();
 
   return (
-    <div className="prose dark:prose-invert">
+    <Layout className="prose dark:prose-invert">
       <Image src={article.coverImage.url} alt={article.title} />
       <h1>{article.title}</h1>
       <div>{parse(String(article?.content?.html))}</div>
-    </div>
+    </Layout>
   );
 }

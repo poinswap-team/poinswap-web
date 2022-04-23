@@ -26,11 +26,11 @@ module.exports = {
           900: '#1b2e32',
         },
       },
-      textShadow: {
-        sm: '0 1px 2px var(--tw-shadow-color)',
-        DEFAULT: '0 2px 4px var(--tw-shadow-color)',
-        lg: '0 8px 16px var(--tw-shadow-color)',
-      },
+      // textShadow: {
+      //   sm: '0 1px 2px var(--tw-shadow-color)',
+      //   DEFAULT: '0 2px 4px var(--tw-shadow-color)',
+      //   lg: '0 8px 16px var(--tw-shadow-color)',
+      // },
     },
   },
   variants: {
@@ -41,12 +41,12 @@ module.exports = {
     require('@tailwindcss/forms'),
     require('@tailwindcss/line-clamp'),
     require('@tailwindcss/aspect-ratio'),
-    plugin(function ({ matchUtilities, theme }) {
-      matchUtilities(
-        { 'text-shadow': (value) => ({ textShadow: value }) },
-        { values: theme('textShadow') }
-      );
-    }),
+    // plugin(function ({ matchUtilities, theme }) {
+    //   matchUtilities(
+    //     { 'text-shadow': (value) => ({ textShadow: value }) },
+    //     { values: theme('textShadow') }
+    //     );
+    //   }),
     require('@vechaiui/core')({
       cssBase: true,
       colors: ['info', 'success', 'warning', 'error'],

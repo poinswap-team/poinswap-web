@@ -12,7 +12,7 @@ import {
   useTransition,
 } from 'remix';
 
-import { H1, Layout, NProgress, ThemeProvider } from '~/components';
+import { H1, NProgress, ThemeProvider } from '~/components';
 import { configApp } from '~/configs';
 import { commitSession, getSession } from '~/sessions';
 
@@ -162,10 +162,10 @@ export function Document({ children }: DocumentProps) {
         <Links />
       </head>
 
-      <body>
+      <body className="scroll-smooth">
         <ThemeProvider specifiedTheme={data?.theme}>
           <NProgress isAnimating={isTransitioning} />
-          <Layout>{children}</Layout>
+          {children}
         </ThemeProvider>
 
         <ScrollRestoration />

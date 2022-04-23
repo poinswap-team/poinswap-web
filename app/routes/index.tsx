@@ -1,9 +1,10 @@
+import { LayoutSpecial } from '~/components';
 import { HomeHero } from '~/contents';
 
 export default function IndexRoute() {
   return (
-    <div>
+    <LayoutSpecial>
       <HomeHero />
-    </div>
+    </LayoutSpecial>
   );
 }

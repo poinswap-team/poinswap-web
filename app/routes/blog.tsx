@@ -1,6 +1,6 @@
 import { json, useLoaderData } from 'remix';
 
-import { Image, RemixLink } from '~/components';
+import { Image, Layout, RemixLink } from '~/components';
 import { QUERY_ALL_ARTICLES } from '~/graphql';
 import { graphcmsClient } from '~/lib';
 
@@ -46,7 +46,7 @@ export default function BlogRoute() {
   const { articles } = useLoaderData<LoaderData>();
 
   return (
-    <div>
+    <Layout>
       <h1 className="mb-14 text-4xl font-extrabold text-primary-500">
         Blog Articles
       </h1>
@@ -63,6 +63,6 @@ export default function BlogRoute() {
           );
         })}
       </div>
-    </div>
+    </Layout>
   );
 }

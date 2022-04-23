@@ -1,6 +1,6 @@
 import { json, useLoaderData } from 'remix';
 
-import { Anchor, Image } from '~/components';
+import { Anchor, Image, Layout } from '~/components';
 
 import type { LoaderFunction } from 'remix';
 
@@ -15,7 +15,7 @@ export default function AboutRoute() {
   const data = useLoaderData<LoaderData>();
 
   return (
-    <div className="prose dark:prose-invert">
+    <Layout className="prose dark:prose-invert">
       <h1 className="text-primary-500">About Poinswap</h1>
 
       <p>Your friendly neighborhood DEX.</p>
@@ -63,6 +63,6 @@ export default function AboutRoute() {
         <li>B</li>
         <li>C</li>
       </ul>
-    </div>
+    </Layout>
   );
 }

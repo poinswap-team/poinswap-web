@@ -12,7 +12,7 @@ export const NProgress: FunctionComponent<NProgressProps> = ({
   const { animationDuration, isFinished, progress } = useNProgress({
     isAnimating,
     minimum: 0,
-    animationDuration: 250,
+    animationDuration: 300,
     incrementDuration: 500,
   });
 
