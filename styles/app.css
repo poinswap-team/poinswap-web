@@ -15,6 +15,14 @@
 }
 
 @layer components {
+  .comic-box {
+    @apply border-2 border-primary-900 bg-neutral-50 p-5;
+  }
+
+  .font-comic {
+    font-family: 'Short Stack', sans-serif;
+  }
+
   .flex-section {
     @apply flex w-full flex-wrap gap-2 py-1;
   }

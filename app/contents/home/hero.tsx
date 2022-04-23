@@ -9,12 +9,12 @@ export const HomeHero: FunctionComponent<HomeHeroProps> = () => {
 
   return (
     <div
-      className="mb-12 flex h-[750px] items-center justify-center"
+      className="flex h-[650px] items-start justify-center"
       style={{
-        overflow: 'hidden',
-        backgroundPosition: 'center center',
+        // overflow: 'hidden',
+        // backgroundPosition: 'center center',
         backgroundRepeat: 'no-repeat',
-        backgroundSize: 'contain',
+        backgroundSize: 'cover',
         backgroundColor: 'transparent',
         backgroundImage: `url("${
           isLight
@@ -23,10 +23,10 @@ export const HomeHero: FunctionComponent<HomeHeroProps> = () => {
         }")`,
       }}
     >
-      <div>
-        <h1>
-          Pioneering RetailFi with user friendly and curated decentralized
-          exchange (DEX)
+      <div className="comic-box my-32">
+        <h1 className="font-comic max-w-[35ch] text-center text-3xl font-extrabold leading-normal">
+          Pioneering RetailFi with user friendly and curated Crypto
+          Decentralized Exchange (DEX)
         </h1>
       </div>
     </div>
