@@ -20,14 +20,14 @@ export const Logo: FunctionComponent<LogoProps> = () => {
 export const LogoSpan = () => {
   return (
     <span
-      className="text-3xl tracking-tighter text-brand-500"
+      className="text-3xl uppercase tracking-tighter text-brand-500"
       style={{
         fontFamily: 'Gluten, sans-serif',
         WebkitTextStroke: '1px #0078A1',
         textShadow: `1px 1px 0 #0078A1`,
       }}
     >
-      POINSWAP
+      Poinswap
     </span>
   );
 };

@@ -24,7 +24,7 @@
   }
 
   .comic-box {
-    @apply border-2 border-primary-900 bg-neutral-50 p-5;
+    @apply rounded-sm border-2 border-primary-900 bg-neutral-50 p-2 dark:bg-neutral-900;
   }
 
   .flex-section {

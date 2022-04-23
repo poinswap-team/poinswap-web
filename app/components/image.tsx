@@ -15,6 +15,10 @@ export const Image: FunctionComponent<ImageProps> = ({
   className,
 }) => {
   return (
-    <img src={src} alt={alt} className={classx('rounded-md', className)} />
+    <img
+      src={src}
+      alt={alt}
+      className={classx('rounded-md object-contain', className)}
+    />
   );
 };

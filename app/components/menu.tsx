@@ -39,7 +39,7 @@ export const MenuNavigation: FunctionComponent<MenuNavigationProps> = () => {
         >
           <Menu.Items
             className={classx(
-              'absolute right-0 z-dropdown mt-2 w-56 min-w-max origin-top-right rounded-md shadow-sm outline-none',
+              'absolute right-0 z-dropdown mt-2 w-56 min-w-max origin-top-right rounded-sm shadow-sm outline-none',
               'border border-gray-200 bg-white',
               'dark:border-gray-700 dark:bg-neutral-800'
             )}
