@@ -1,4 +1,4 @@
-import { RemixLink, useTheme } from '~/components';
+import { RemixLink, useTheme, Image } from '~/components';
 
 import type { FunctionComponent } from 'react';
 
@@ -9,6 +9,7 @@ export const HomeHero: FunctionComponent<HomeHeroProps> = () => {
 
   return (
     <div
+      id="home-hero-background"
       className="flex h-[650px] items-start justify-center"
       style={{
         // overflow: 'hidden',
@@ -23,9 +24,9 @@ export const HomeHero: FunctionComponent<HomeHeroProps> = () => {
         }")`,
       }}
     >
-      <div>
-        <div className="comic-box my-32 flex flex-col space-y-4">
-          <h1 className="font-comic max-w-[35ch] text-center text-3xl font-extrabold leading-normal">
+      <div id="home-hero-box-characters" className="px-4">
+        <div className="comic-box mt-32 flex flex-col space-y-4">
+          <h1 className="font-comic max-w-[35ch] text-center text-xl font-extrabold leading-normal md:text-3xl">
             Pioneering RetailFi with user friendly and curated Crypto
             Decentralized Exchange (DEX)
           </h1>
@@ -47,7 +48,28 @@ export const HomeHero: FunctionComponent<HomeHeroProps> = () => {
           </section>
         </div>
 
-        <div>Character</div>
+        <div className="flex justify-center pt-20 md:pt-10">
+          <div className="flex space-x-2 self-end">
+            <Image
+              alt="Slime Outfit"
+              className="mb-20 h-[160px] self-end md:h-[200px]"
+              src={
+                isLight
+                  ? '/assets/characters/hero-slime-outfit-light.png'
+                  : '/assets/characters/hero-slime-outfit-dark.png'
+              }
+            />
+            <Image
+              alt="Slime Plain"
+              className="mb-1 h-[115px] self-end md:h-[144px]"
+              src={
+                isLight
+                  ? '/assets/characters/hero-slime-plain-light.png'
+                  : '/assets/characters/hero-slime-plain-dark.png'
+              }
+            />
+          </div>
+        </div>
       </div>
     </div>
   );

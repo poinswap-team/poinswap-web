@@ -17,7 +17,7 @@ export const NavigationBar: FunctionComponent<NavigationBarProps> = () => {
   return (
     <nav
       id="navigation-bar"
-      className="fixed w-full select-none border-b-2 border-primary-900 bg-neutral-50 p-2 dark:bg-neutral-800 md:p-4"
+      className="fixed z-50 w-full select-none border-b-2 border-primary-900 bg-neutral-50 p-2 dark:bg-neutral-800 md:p-4"
     >
       <div className="flex flex-wrap items-center justify-between">
         <div className="flex space-x-4">
@@ -78,7 +78,7 @@ export const NavigationBarAuth: FunctionComponent<
       </RemixLink>
       <RemixLink
         to="/signup"
-        className="btn-solid btn btn-md"
+        className="btn btn-md btn-solid"
         data-color="primary"
       >
         Sign up
