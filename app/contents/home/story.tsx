@@ -10,6 +10,8 @@ export const HomeStory: FunctionComponent<HomeStoryProps> = () => {
       <StoryStart />
       <StoryFeatures />
       <StoryReasons />
+      <StoryTokenomics />
+      <StoryRoadmap />
       <StorySubscribe />
     </div>
   );
@@ -116,7 +118,6 @@ const StoryFeatures = () => {
 /**
  * Story Reasons
  */
-
 const StoryReasons = () => {
   const { isLight } = useTheme();
 
@@ -141,6 +142,32 @@ const StoryReasons = () => {
           srcHover="/assets/characters/slime-3-b.png"
           width={200}
         />
+      </div>
+    </div>
+  );
+};
+
+/**
+ * Story Tokenomics
+ */
+const StoryTokenomics = () => {
+  return (
+    <div id="home-story-tokenomics">
+      <div className="comic-box flex flex-col items-center justify-center gap-1 space-y-4 p-8">
+        <h2 className="font-comic text-center text-3xl">Tokenomics</h2>
+      </div>
+    </div>
+  );
+};
+
+/**
+ * Story Roadmap
+ */
+const StoryRoadmap = () => {
+  return (
+    <div id="home-story-roadmap">
+      <div className="comic-box flex flex-col items-center justify-center gap-1 space-y-4 p-8">
+        <h2 className="font-comic text-center text-3xl">Roadmap</h2>
       </div>
     </div>
   );
