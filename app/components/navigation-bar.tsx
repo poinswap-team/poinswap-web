@@ -34,7 +34,7 @@ export const NavigationBar: FunctionComponent<NavigationBarProps> = () => {
             </Badge>
           </div>
 
-          <div className="hidden w-auto items-center justify-between lg:flex">
+          <div className="hidden w-auto items-center justify-between xl:flex">
             <ul className="text-md flex flex-row font-medium">
               {configNavigationLinks.map((navItem) => {
                 return (
@@ -60,7 +60,7 @@ export const NavigationBar: FunctionComponent<NavigationBarProps> = () => {
           </div>
         </div>
 
-        <div className="flex items-center space-x-2">
+        <div className="flex items-center space-x-1 sm:space-x-2">
           <ExternalLinks className="hidden text-xl sm:flex" />
           <NavigationBarMenu />
           <ThemeSwitcher />

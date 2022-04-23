@@ -10,7 +10,7 @@ export const Logo: FunctionComponent<LogoProps> = () => {
       <Image
         alt="PON"
         src="/assets/logos/poinswap-logo-slime.png"
-        className="h-[25px] md:h-[35px]"
+        className="h-[20px] sm:h-[25px] md:h-[35px]"
       />
       <LogoSpan />
     </div>

@@ -1,6 +1,6 @@
 import { Menu, Transition } from '@headlessui/react';
 import MenuIcon from '@heroicons/react/solid/MenuIcon';
-import { Button, Divider, Icon } from '@vechaiui/react';
+import { Button, Divider, Icon, IconButton } from '@vechaiui/react';
 import React from 'react';
 
 import { RemixNavLink } from '~/components';
@@ -18,18 +18,24 @@ export const MenuNavigation: FunctionComponent<MenuNavigationProps> = () => {
     <div className="flex w-full select-none flex-wrap">
       <Menu as="div" className="relative inline-block ">
         <Menu.Button
+          className="hidden sm:flex"
           as={Button}
           variant="solid"
           color="primary"
           leftIcon={
-            <Icon
-              as={MenuIcon}
-              label="gift"
-              className="mr-1 hidden h-4 w-4 sm:block"
-            />
+            <Icon as={MenuIcon} label="Menu" className="mr-1 h-4 w-4" />
           }
         >
           Menu
+        </Menu.Button>
+
+        <Menu.Button
+          className="flex sm:hidden"
+          as={IconButton}
+          variant="solid"
+          color="primary"
+        >
+          <Icon as={MenuIcon} label="Menu" className="h-4 w-4" />
         </Menu.Button>
 
         <Transition
