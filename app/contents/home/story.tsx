@@ -7,12 +7,25 @@ interface HomeStoryProps {}
 export const HomeStory: FunctionComponent<HomeStoryProps> = () => {
   return (
     <div className="flex flex-col space-y-4 px-4 md:px-8">
+      <StoryIntro />
       <StoryStart />
       <StoryFeatures />
       <StoryReasons />
       <StoryTokenomics />
       <StoryRoadmap />
       <StorySubscribe />
+    </div>
+  );
+};
+
+const StoryIntro = () => {
+  return (
+    <div id="home-story-intro">
+      <div className="flex justify-center">
+        <h2 className="font-comic text-center text-3xl">
+          (Stay tuned. We are revamping the homepage)
+        </h2>
+      </div>
     </div>
   );
 };
@@ -155,6 +168,9 @@ const StoryTokenomics = () => {
     <div id="home-story-tokenomics">
       <div className="comic-box flex flex-col items-center justify-center gap-1 space-y-4 p-8">
         <h2 className="font-comic text-center text-3xl">Tokenomics</h2>
+        <h3 className="font-comic text-center text-xl">
+          (Stay tuned. We are revamping the Tokenomics)
+        </h3>
       </div>
     </div>
   );
@@ -169,12 +185,12 @@ const StoryRoadmap = () => {
   return (
     <div id="home-story-roadmap">
       <div
-        className="comic-box flex min-h-[600px] flex-[2] flex-col items-center justify-start gap-1 space-y-4 bg-cover p-8"
+        className="comic-box flex min-h-[720px] flex-[2] flex-col items-center justify-start gap-1 space-y-4 bg-cover bg-center bg-no-repeat p-8"
         style={{
           backgroundImage: `url("${
             isLight
               ? '/assets/backgrounds/roadmap.jpg'
-              : '/assets/backgrounds/roadmap.jpg'
+              : '/assets/backgrounds/roadmap-dark.jpg'
           }")`,
         }}
       >

@@ -38,9 +38,10 @@ export const NavigationBar: FunctionComponent<NavigationBarProps> = () => {
                       to={navItem.to}
                       className={({ isActive }) => {
                         return classx(
-                          isActive && 'text-primary-500',
-                          'p-2 font-bold',
-                          'hover:bg-neutral-100'
+                          isActive &&
+                            'bg-neutral-100 text-primary-500 dark:bg-neutral-900',
+                          'rounded-base p-2 font-bold',
+                          'hover:bg-primary-100 dark:hover:bg-primary-800'
                         );
                       }}
                     >
@@ -79,7 +80,7 @@ export const NavigationBarAuth: FunctionComponent<
       </RemixLink>
       <RemixLink
         to="/signup"
-        className="btn-solid btn btn-md"
+        className="btn btn-md btn-solid"
         data-color="primary"
       >
         Sign up
