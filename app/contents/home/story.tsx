@@ -9,6 +9,7 @@ export const HomeStory: FunctionComponent<HomeStoryProps> = () => {
     <div className="flex flex-col space-y-4 px-4 md:px-8">
       <StoryStart />
       <StoryFeatures />
+      <StoryReasons />
       <StorySubscribe />
     </div>
   );
@@ -107,6 +108,39 @@ const StoryFeatures = () => {
             );
           })}
         </div>
+      </div>
+    </div>
+  );
+};
+
+/**
+ * Story Reasons
+ */
+
+const StoryReasons = () => {
+  const { isLight } = useTheme();
+
+  return (
+    <div
+      id="home-story-reasons"
+      className="flex w-full flex-col gap-4 lg:flex-row"
+    >
+      <div
+        className="comic-box flex min-h-[500px] flex-col items-start justify-center gap-1 space-y-4 bg-cover bg-center p-8"
+        style={{
+          backgroundImage: `url("${
+            isLight
+              ? '/assets/backgrounds/panel-3-light.png'
+              : '/assets/backgrounds/panel-3-dark.png'
+          }")`,
+        }}
+      >
+        <ImageInteractive
+          alt="Snoop Dogg Slime"
+          srcNormal="/assets/characters/slime-3-a.png"
+          srcHover="/assets/characters/slime-3-b.png"
+          width={200}
+        />
       </div>
     </div>
   );
