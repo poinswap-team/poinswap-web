@@ -164,9 +164,20 @@ const StoryTokenomics = () => {
  * Story Roadmap
  */
 const StoryRoadmap = () => {
+  const { isLight } = useTheme();
+
   return (
     <div id="home-story-roadmap">
-      <div className="comic-box flex flex-col items-center justify-center gap-1 space-y-4 p-8">
+      <div
+        className="comic-box flex min-h-[600px] flex-[2] flex-col items-center justify-start gap-1 space-y-4 bg-cover p-8"
+        style={{
+          backgroundImage: `url("${
+            isLight
+              ? '/assets/backgrounds/roadmap.jpg'
+              : '/assets/backgrounds/roadmap.jpg'
+          }")`,
+        }}
+      >
         <h2 className="font-comic text-center text-3xl">Roadmap</h2>
       </div>
     </div>
