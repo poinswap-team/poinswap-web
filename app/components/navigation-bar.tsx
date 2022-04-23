@@ -5,6 +5,7 @@ import {
   RemixLink,
   RemixNavLink,
   ThemeSwitcher,
+  Badge,
 } from '~/components';
 import { configNavigationLinks } from '~/configs';
 import { classx } from '~/utils';
@@ -21,12 +22,17 @@ export const NavigationBar: FunctionComponent<NavigationBarProps> = () => {
     >
       <div className="flex flex-wrap items-center justify-between">
         <div className="flex space-x-4">
-          <RemixLink
-            to="/"
-            className="text-2xl font-black tracking-wide hover:text-primary-500"
-          >
-            <Logo />
-          </RemixLink>
+          <div className="flex items-center gap-2">
+            <RemixLink
+              to="/"
+              className="text-2xl font-black tracking-wide hover:text-primary-500"
+            >
+              <Logo />
+            </RemixLink>
+            <Badge color="primary" variant="solid">
+              Alpha
+            </Badge>
+          </div>
 
           <div className="hidden w-auto items-center justify-between lg:flex">
             <ul className="text-md flex flex-row font-medium">
