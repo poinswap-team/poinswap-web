@@ -10,13 +10,8 @@ export const HomeHero: FunctionComponent<HomeHeroProps> = () => {
   return (
     <div
       id="home-hero-background"
-      className="mb-32 flex h-[650px] items-start justify-center"
+      className="mb-32 flex h-[650px] items-start justify-center bg-cover"
       style={{
-        // overflow: 'hidden',
-        // backgroundPosition: 'center center',
-        backgroundRepeat: 'no-repeat',
-        backgroundSize: 'cover',
-        backgroundColor: 'transparent',
         backgroundImage: `url("${
           isLight
             ? '/assets/backgrounds/hero-background-light.png'

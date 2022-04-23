@@ -11,10 +11,8 @@ export const Footer: FunctionComponent<FooterProps> = () => {
 
   return (
     <footer
-      className="mt-16 flex h-[500px] flex-col items-center gap-1 pb-2"
+      className="mt-16 flex h-[500px] flex-col items-center gap-1 bg-cover pb-2"
       style={{
-        backgroundSize: 'cover',
-        backgroundColor: 'transparent',
         backgroundImage: `url("${
           isLight
             ? '/assets/backgrounds/footer-light.png'

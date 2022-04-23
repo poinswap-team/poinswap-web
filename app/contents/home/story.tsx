@@ -19,13 +19,11 @@ const StoryStart = () => {
   return (
     <div
       id="home-story-start"
-      className="flex w-full flex-col gap-4 md:flex-row"
+      className="flex w-full flex-col gap-4 lg:flex-row"
     >
       <div
-        className="comic-box flex min-h-[500px] flex-col items-center justify-center gap-1 space-y-4 p-8"
+        className="comic-box flex min-h-[500px] flex-col items-center justify-center gap-1 space-y-4 bg-cover p-8"
         style={{
-          backgroundSize: 'cover',
-          backgroundColor: 'transparent',
           backgroundImage: `url("${
             isLight
               ? '/assets/backgrounds/panel-1.png'
@@ -42,10 +40,8 @@ const StoryStart = () => {
       </div>
 
       <div
-        className="comic-box flex min-h-[500px] flex-[2] flex-col items-center justify-center gap-1 space-y-4 p-8"
+        className="comic-box flex min-h-[500px] flex-[2] flex-col items-center justify-center gap-1 space-y-4 bg-cover p-8"
         style={{
-          backgroundSize: 'cover',
-          backgroundColor: 'transparent',
           backgroundImage: `url("${
             isLight
               ? '/assets/backgrounds/panel-2-light.png'
