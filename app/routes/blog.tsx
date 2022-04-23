@@ -47,9 +47,10 @@ export default function BlogRoute() {
 
   return (
     <Layout>
-      <h1 className="mb-14 text-4xl font-extrabold text-primary-500">
+      <h1 className="font-comic mb-14 text-4xl text-primary-500">
         Blog Articles
       </h1>
+
       <div className="flex flex-col space-y-12">
         {articles.map((article) => {
           return (

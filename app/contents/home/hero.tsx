@@ -26,7 +26,7 @@ export const HomeHero: FunctionComponent<HomeHeroProps> = () => {
     >
       <div id="home-hero-box-characters" className="px-4">
         <div className="comic-box mt-32 flex flex-col space-y-4 p-5">
-          <h1 className="font-comic max-w-[36ch] text-center text-xl font-extrabold leading-normal md:text-3xl">
+          <h1 className="font-comic max-w-[36ch] text-center text-xl leading-normal md:text-3xl">
             Pioneering RetailFi with user friendly and curated Crypto
             Decentralized Exchange (DEX)
           </h1>

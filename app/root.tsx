@@ -72,15 +72,19 @@ export const links: LinksFunction = () => {
       rel: 'preconnect',
     },
     {
+      href: 'https://fontbit.io/css2?family=Lato&display=swap',
+      rel: 'stylesheet',
+    },
+    {
       href: 'https://fontbit.io/css2?family=Gluten:wght@900&display=swap&text=POINSWAP',
       rel: 'stylesheet',
     },
     {
-      href: 'https://fontbit.io/css2?family=Short+Stack&display=swap',
+      href: 'https://fontbit.io/css2?family=Fuzzy+Bubbles:wght@700&display=swap',
       rel: 'stylesheet',
     },
     {
-      href: 'https://fontbit.io/css2?family=Lato&display=swap',
+      href: 'https://fontbit.io/css2?family=Short+Stack&display=swap',
       rel: 'stylesheet',
     },
     {

@@ -20,8 +20,8 @@
 
 @layer components {
   .font-comic {
-    font-family: 'Short Stack', sans-serif;
-    @apply font-extrabold;
+    font-family: 'Fuzzy Bubbles', sans-serif;
+    @apply font-bold;
   }
 
   .comic-box {
