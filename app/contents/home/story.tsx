@@ -1,4 +1,4 @@
-import { Image } from '~/components';
+import { Image, RemixLink } from '~/components';
 
 import type { FunctionComponent } from 'react';
 
@@ -14,14 +14,30 @@ export const HomeStory: FunctionComponent<HomeStoryProps> = () => {
 
 const StorySubscribe = () => {
   return (
-    <div className="font-comic">
-      <div className="comic-box flex flex-col items-center justify-center gap-1 space-y-4 pt-8">
-        <h2 className="text-2xl">For now, subscribe for updates</h2>
+    <div>
+      <div className="comic-box flex flex-col items-center justify-center gap-1 space-y-4 p-8">
+        <h2 className="font-comic text-2xl">Subscribe for updates</h2>
         <Image
           className="h-[300px]"
           alt="Multiple Slimes"
           src="/assets/characters/slime-5-a.png"
         />
+        <section className="flex-section justify-center space-x-2">
+          <RemixLink
+            to="/discord"
+            className="btn btn-lg btn-solid rounded-base"
+            data-color="primary"
+          >
+            Join our Discord server
+          </RemixLink>
+          <RemixLink
+            to="/twitter"
+            className="btn-outline btn btn-lg rounded-base"
+            data-color="primary"
+          >
+            Follow us on Twitter
+          </RemixLink>
+        </section>
       </div>
     </div>
   );

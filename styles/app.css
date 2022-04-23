@@ -21,6 +21,7 @@
 @layer components {
   .font-comic {
     font-family: 'Short Stack', sans-serif;
+    @apply font-extrabold;
   }
 
   .comic-box {
