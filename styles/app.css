@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer base {
+  body {
+    font-family: 'Lato', sans-serif;
+    @apply tracking-wide;
+  }
   a {
     @apply no-underline;
   }
@@ -15,12 +19,12 @@
 }
 
 @layer components {
-  .comic-box {
-    @apply border-2 border-primary-900 bg-neutral-50 p-5;
-  }
-
   .font-comic {
     font-family: 'Short Stack', sans-serif;
+  }
+
+  .comic-box {
+    @apply border-2 border-primary-900 bg-neutral-50 p-5;
   }
 
   .flex-section {
