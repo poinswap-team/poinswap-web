@@ -1,9 +1,9 @@
-import { Intro } from '~/contents';
+import { HomeHero } from '~/contents';
 
 export default function IndexRoute() {
   return (
     <div>
-      <Intro />
+      <HomeHero />
     </div>
   );
 }
