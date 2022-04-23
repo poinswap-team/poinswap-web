@@ -1,10 +1,11 @@
 import { LayoutSpecial } from '~/components';
-import { HomeHero } from '~/contents';
+import { HomeHero, HomeStory } from '~/contents';
 
 export default function IndexRoute() {
   return (
     <LayoutSpecial>
       <HomeHero />
+      <HomeStory />
     </LayoutSpecial>
   );
 }
