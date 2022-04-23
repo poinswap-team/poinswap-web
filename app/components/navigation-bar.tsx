@@ -29,7 +29,7 @@ export const NavigationBar: FunctionComponent<NavigationBarProps> = () => {
           </RemixLink>
 
           <div className="hidden w-auto items-center justify-between lg:flex">
-            <ul className="flex flex-row text-sm font-medium">
+            <ul className="text-md flex flex-row font-medium">
               {configNavigationLinks.map((navItem) => {
                 return (
                   <li key={navItem.text}>
@@ -39,7 +39,8 @@ export const NavigationBar: FunctionComponent<NavigationBarProps> = () => {
                       className={({ isActive }) => {
                         return classx(
                           isActive && 'text-primary-500',
-                          'p-2 font-bold'
+                          'p-2 font-bold',
+                          'hover:bg-neutral-100'
                         );
                       }}
                     >
@@ -78,7 +79,7 @@ export const NavigationBarAuth: FunctionComponent<
       </RemixLink>
       <RemixLink
         to="/signup"
-        className="btn btn-md btn-solid"
+        className="btn-solid btn btn-md"
         data-color="primary"
       >
         Sign up
