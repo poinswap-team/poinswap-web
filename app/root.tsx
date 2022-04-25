@@ -26,6 +26,13 @@ import type {
 
 import styles from '~/styles/app.css';
 
+type LoaderData = {
+  user: any;
+  theme: any;
+  error: any;
+  ENV: ReturnType<typeof getEnv>;
+};
+
 export const headers: HeadersFunction = () => {
   return {
     'Accept-CH': 'Sec-CH-Prefers-Color-Scheme',
@@ -149,13 +156,6 @@ export default function App() {
 interface DocumentProps {
   children: React.ReactNode;
 }
-
-type LoaderData = {
-  user: any;
-  theme: any;
-  error: any;
-  ENV: ReturnType<typeof getEnv>;
-};
 
 export function Document({ children }: DocumentProps) {
   const data = useLoaderData<LoaderData>();

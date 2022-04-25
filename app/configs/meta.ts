@@ -1,4 +1,4 @@
-export const metaDefault = {
+export const configMetaDefault = {
   name: 'Poinswap',
   title: 'Poinswap - Pioneering RetailFi',
   description:
