@@ -15,6 +15,7 @@ import {
 import { H1, NProgress, ThemeProvider } from '~/components';
 import { configApp } from '~/configs';
 import { commitSession, getSession } from '~/sessions';
+import { getEnv } from '~/utils';
 
 import type {
   LinksFunction,
@@ -123,10 +124,11 @@ export const loader: LoaderFunction = async ({ request }) => {
     ? JSON.parse(themeFromSession)
     : configApp?.theme;
 
-  const data = {
+  const data: LoaderData = {
     user: await session.get('user'),
     theme: themeParsed,
     error: await session.get('error'),
+    ENV: getEnv(),
   };
 
   return json(data, {
@@ -148,8 +150,16 @@ interface DocumentProps {
   children: React.ReactNode;
 }
 
+type LoaderData = {
+  user: any;
+  theme: any;
+  error: any;
+  ENV: ReturnType<typeof getEnv>;
+};
+
 export function Document({ children }: DocumentProps) {
-  const data = useLoaderData();
+  const data = useLoaderData<LoaderData>();
+
   const transition = useTransition();
 
   const [isTransitioning, setIsTransitioning] = useState(false);
@@ -175,6 +185,13 @@ export function Document({ children }: DocumentProps) {
         <ScrollRestoration />
         <Scripts />
         <LiveReload />
+
+        <script
+          // eslint-disable-next-line react/no-danger
+          dangerouslySetInnerHTML={{
+            __html: `window.ENV = ${JSON.stringify(data.ENV)};`,
+          }}
+        />
       </body>
     </html>
   );
