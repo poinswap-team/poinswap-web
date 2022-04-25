@@ -24,13 +24,13 @@ export const meta: MetaFunction = ({ data }) => {
 
   if (!article) {
     return {
-      title: `Blog article not found - Poinswap`,
+      title: `Blog article not found — Poinswap`,
       description: 'Sorry this is not the article you are looking for.',
     };
   }
 
   return {
-    title: `${article.title} - Blog - Poinswap`,
+    title: `${article.title} — Poinswap Blog`,
     description: article.summary,
     'og:image': article.coverImage.url,
   };

@@ -98,9 +98,9 @@ export const meta: MetaFunction = () => {
   return {
     charset: 'utf-8',
     viewport: 'width=device-width,initial-scale=1',
-    title: 'Poinswap - Pioneering RetailFi',
+    title: 'Poinswap — Your friendly neighborhood DEX. Pioneering RetailFi',
     description:
-      'Pioneering RetailFi with user friendly and curated token with friendly neighborhood DEX (Crypto Decentralized Exchange)',
+      'Poinswap is a user friendly and curated Decentralized Crypto Exchange (DEX) designed for retailers and experienced beginners in crypto market ',
     name: 'Poinswap',
     url: 'https://poinswap.com/',
     route: '',

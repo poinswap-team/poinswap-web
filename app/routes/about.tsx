@@ -1,6 +1,7 @@
 import { json, useLoaderData } from 'remix';
 
 import { Anchor, Image, Layout } from '~/components';
+import { dataTeamMembers } from '~/data';
 
 import type { LoaderFunction } from 'remix';
 
@@ -57,12 +58,25 @@ export default function AboutRoute() {
         </li>
       </ul>
 
-      <h2>Features</h2>
+      <h2>Team Members</h2>
+      <ul>
+        {dataTeamMembers.map((member) => {
+          return (
+            <li key={member.name}>
+              <Anchor href={member.url}>
+                {member.name} — {member.role}
+              </Anchor>
+            </li>
+          );
+        })}
+      </ul>
+
+      {/* <h2>Features</h2>
       <ul>
         <li>A</li>
         <li>B</li>
         <li>C</li>
-      </ul>
+      </ul> */}
     </Layout>
   );
 }

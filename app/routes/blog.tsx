@@ -15,8 +15,8 @@ export const handle: SEOHandle = {
 
 export const meta: MetaFunction = ({ data }) => {
   return {
-    title: 'Poinswap - Blog articles',
-    description: 'Resources and readings from Poinswap community.',
+    title: 'Poinswap Blog',
+    description: 'Articles, resources, and readings from Poinswap community.',
   };
 };
 
