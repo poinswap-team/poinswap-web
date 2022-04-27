@@ -28,6 +28,10 @@
     @apply rounded-sm border-2 border-primary-900 bg-neutral-50 p-2 dark:bg-neutral-900;
   }
 
+  .inherit {
+    display: inherit;
+  }
+
   .flex-1 {
     flex: 1;
   }

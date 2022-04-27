@@ -1,5 +1,5 @@
 import {
-  ComicBox,
+  Anchor,
   ComicSpeech,
   Image,
   ImageInteractive,
@@ -149,12 +149,26 @@ const StoryReasons = () => {
           }")`,
         }}
       >
+        <ComicSpeech className="text-center">
+          Let’s join the fun in our{' '}
+          <Anchor className="inline" href="https://poinswap.com/discord">
+            <Image
+              className="inherit h-[40px]"
+              alt="Discord"
+              src="/assets/logos/discord.svg"
+            />
+          </Anchor>
+        </ComicSpeech>
         <ImageInteractive
           alt="Snoop Dogg Slime"
           srcNormal="/assets/characters/slime-3-a.png"
           srcHover="/assets/characters/slime-3-b.png"
           width={200}
         />
+        <ComicSpeech>
+          Currently we are preparing the opening of the{' '}
+          <RemixLink to="/privatesale">private sale</RemixLink>
+        </ComicSpeech>
       </div>
     </div>
   );
