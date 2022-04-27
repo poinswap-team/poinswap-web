@@ -43,24 +43,24 @@ export const links: LinksFunction = () => {
   return [
     {
       rel: 'shortcut icon',
-      href: '/favicon.ico',
+      href: '/favicons/favicon.ico',
     },
     {
       rel: 'icon',
       type: 'image/png',
       sizes: '32x32',
-      href: '/favicon-32x32.png',
+      href: '/favicons/favicon-32x32.png',
     },
     {
       rel: 'icon',
       type: 'image/png',
       sizes: '16x16',
-      href: '/favicon-16x16.png',
+      href: '/favicons/favicon-16x16.png',
     },
     {
       rel: 'apple-touch-icon',
       sizes: '180x180',
-      href: '/apple-touch-icon.png',
+      href: '/favicons/apple-touch-icon.png',
     },
     {
       rel: 'mask-icon',

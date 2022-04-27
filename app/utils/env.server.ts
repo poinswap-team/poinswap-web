@@ -8,8 +8,8 @@ const processEnv = {
   APP_ENV: process.env.APP_ENV /* local | development | staging | production */,
   API_URL: process.env.API_URL /* localhost | api.domain.com */,
   VERCEL: process.env.VERCEL,
-  GRAPHCMS_ENDPOINT: process.env.GRAPHCMS_ENDPOINT,
-  CONVERTKIT_API_KEY: process.env.CONVERTKIT_API_KEY,
+  // GRAPHCMS_ENDPOINT: process.env.GRAPHCMS_ENDPOINT,
+  // CONVERTKIT_API_KEY: process.env.CONVERTKIT_API_KEY,
   SPLITBEE_ID: process.env.SPLITBEE_ID,
   GA_MEASUREMENT_ID: process.env.GA_MEASUREMENT_ID,
 };
