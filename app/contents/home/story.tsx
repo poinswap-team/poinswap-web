@@ -182,9 +182,7 @@ const StoryTokenomics = () => {
     <div id="home-story-tokenomics">
       <div className="comic-box flex flex-col items-center justify-center gap-1 space-y-4 p-8">
         <h2 className="font-comic text-center text-3xl">Tokenomics</h2>
-        <h3 className="font-comic text-center text-xl">
-          (Stay tuned. We are revamping the Tokenomics)
-        </h3>
+        <Image alt="Tokenomics Chart" src="/assets/images/tokenomics.svg" />
       </div>
     </div>
   );
