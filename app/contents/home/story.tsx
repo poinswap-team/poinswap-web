@@ -1,4 +1,5 @@
 import {
+  ComicBox,
   Image,
   ImageInteractive,
   LogoSpan,
@@ -58,9 +59,11 @@ export const StoryStart = () => {
           }")`,
         }}
       >
-        <div className="comic-box font-comic p-4">
-          Welcome to <LogoSpan />
-        </div>
+        <ComicBox>
+          <p>
+            Welcome to <LogoSpan />
+          </p>
+        </ComicBox>
         <ImageInteractive
           alt="CZ Slime"
           srcNormal="/assets/characters/slime-1-a.png"
@@ -80,12 +83,20 @@ export const StoryStart = () => {
           }")`,
         }}
       >
+        <ComicBox>
+          <p>
+            We make it possible for retailers to create their own blockchain
+          </p>
+        </ComicBox>
         <ImageInteractive
           alt="Gary Vee Slime"
           srcNormal="/assets/characters/slime-2-a.png"
           srcHover="/assets/characters/slime-2-b.png"
           width={200}
         />
+        <ComicBox>
+          <p>in Avalance (AVAX) subnets</p>
+        </ComicBox>
       </div>
     </div>
   );
