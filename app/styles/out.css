@@ -4716,6 +4716,7 @@ a:focus-visible:focus {
 }
 
 .notification-content {
+  flex: 1;
   margin-right: 0.5rem;
   margin-top: -1px;
   display: flex;
@@ -5638,7 +5639,6 @@ input[type=checkbox]:checked:hover:not(:disabled) + .form-switch, input[type=che
 }
 
 .comic-box {
-  flex: 1;
   border-radius: 0.125rem;
   border-width: 2px;
   --tw-border-opacity: 1;
@@ -5651,6 +5651,10 @@ input[type=checkbox]:checked:hover:not(:disabled) + .form-switch, input[type=che
 .dark .comic-box {
   --tw-bg-opacity: 1;
   background-color: rgba(var(--vc-colors-neutral-900), var(--tw-bg-opacity));
+}
+
+.flex-1 {
+  flex: 1;
 }
 
 .flex-section {
@@ -5695,6 +5699,7 @@ input[type=checkbox]:checked:hover:not(:disabled) + .form-switch, input[type=che
 }
 
 .scroll-area-thumb {
+  flex: 1;
   position: relative;
   flex: 1 1 0%;
   cursor: pointer;
@@ -6661,16 +6666,16 @@ input[type=checkbox]:checked:hover:not(:disabled) + .form-switch, input[type=che
   padding: 2rem;
 }
 
+.p-4 {
+  padding: 1rem;
+}
+
 .p-12 {
   padding: 3rem;
 }
 
 .p-1 {
   padding: 0.25rem;
-}
-
-.p-4 {
-  padding: 1rem;
 }
 
 .py-4 {

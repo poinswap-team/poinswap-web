@@ -49,7 +49,7 @@ export const StoryStart = () => {
       className="flex w-full flex-col gap-4 lg:flex-row"
     >
       <div
-        className="comic-box flex min-h-[500px] flex-col items-center justify-center gap-1 space-y-4 bg-cover bg-center p-8"
+        className="comic-box flex min-h-[500px] flex-1 flex-col items-center justify-center gap-1 space-y-4 bg-cover bg-center p-8"
         style={{
           backgroundImage: `url("${
             isLight
@@ -58,7 +58,7 @@ export const StoryStart = () => {
           }")`,
         }}
       >
-        <div className="comic-box">
+        <div className="comic-box font-comic p-4">
           Welcome to <LogoSpan />
         </div>
         <ImageInteractive
@@ -107,7 +107,9 @@ const StoryFeatures = () => {
                 className="flex flex-col items-center gap-2"
               >
                 <Image src={feature.imageUrl} alt={feature.name} width={150} />
-                <h3 className="text-2xl font-bold">{feature.name}</h3>
+                <h3 className="font-comic text-2xl font-bold">
+                  {feature.name}
+                </h3>
                 <p className="max-w-[25ch] text-center text-lg ">
                   {feature.description}
                 </p>
