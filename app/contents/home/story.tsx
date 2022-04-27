@@ -1,5 +1,6 @@
 import {
   ComicBox,
+  ComicSpeech,
   Image,
   ImageInteractive,
   LogoSpan,
@@ -59,11 +60,9 @@ export const StoryStart = () => {
           }")`,
         }}
       >
-        <ComicBox>
-          <p>
-            Welcome to <LogoSpan />
-          </p>
-        </ComicBox>
+        <ComicSpeech>
+          Welcome to <LogoSpan />
+        </ComicSpeech>
         <ImageInteractive
           alt="CZ Slime"
           srcNormal="/assets/characters/slime-1-a.png"
@@ -83,20 +82,16 @@ export const StoryStart = () => {
           }")`,
         }}
       >
-        <ComicBox>
-          <p>
-            We make it possible for retailers to create their own blockchain
-          </p>
-        </ComicBox>
+        <ComicSpeech>
+          We make it possible for retailers to create their own blockchain
+        </ComicSpeech>
         <ImageInteractive
           alt="Gary Vee Slime"
           srcNormal="/assets/characters/slime-2-a.png"
           srcHover="/assets/characters/slime-2-b.png"
           width={200}
         />
-        <ComicBox>
-          <p>in Avalance (AVAX) subnets</p>
-        </ComicBox>
+        <ComicSpeech>in Avalance (AVAX) subnets</ComicSpeech>
       </div>
     </div>
   );

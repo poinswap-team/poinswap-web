@@ -5,9 +5,19 @@ interface ComicBoxProps {
 }
 
 export const ComicBox: FunctionComponent<ComicBoxProps> = ({ children }) => {
+  return <div className="comic-box">{children}</div>;
+};
+
+interface ComicSpeechProps {
+  children: React.ReactNode;
+}
+
+export const ComicSpeech: FunctionComponent<ComicSpeechProps> = ({
+  children,
+}) => {
   return (
     <div className="comic-box font-comic p-4 text-center text-xl">
-      {children}
+      <p>{children}</p>
     </div>
   );
 };
