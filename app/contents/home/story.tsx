@@ -140,7 +140,7 @@ const StoryReasons = () => {
       className="flex w-full flex-col gap-4 lg:flex-row"
     >
       <div
-        className="comic-box flex min-h-[500px] flex-col items-start justify-center gap-1 space-y-4 bg-cover bg-center p-8"
+        className="comic-box flex min-h-[500px] flex-1 flex-col items-start justify-center gap-1 space-y-4 bg-cover bg-center p-8"
         style={{
           backgroundImage: `url("${
             isLight
