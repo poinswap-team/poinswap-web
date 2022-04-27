@@ -1,4 +1,10 @@
-import { Image, ImageInteractive, RemixLink, useTheme } from '~/components';
+import {
+  Image,
+  ImageInteractive,
+  LogoSpan,
+  RemixLink,
+  useTheme,
+} from '~/components';
 import { dataMainFeatures } from '~/data';
 
 import type { FunctionComponent } from 'react';
@@ -8,7 +14,7 @@ interface HomeStoryProps {}
 export const HomeStory: FunctionComponent<HomeStoryProps> = () => {
   return (
     <div className="flex flex-col space-y-4 px-4 md:px-8">
-      <StoryIntro />
+      {/* <StoryIntro /> */}
       <StoryStart />
       <StoryFeatures />
       <StoryReasons />
@@ -19,7 +25,7 @@ export const HomeStory: FunctionComponent<HomeStoryProps> = () => {
   );
 };
 
-const StoryIntro = () => {
+export const StoryIntro = () => {
   return (
     <div id="home-story-intro">
       <div className="flex justify-center">
@@ -34,7 +40,7 @@ const StoryIntro = () => {
 /**
  * Story Start
  */
-const StoryStart = () => {
+export const StoryStart = () => {
   const { isLight } = useTheme();
 
   return (
@@ -52,6 +58,9 @@ const StoryStart = () => {
           }")`,
         }}
       >
+        <div className="comic-box">
+          Welcome to <LogoSpan />
+        </div>
         <ImageInteractive
           alt="CZ Slime"
           srcNormal="/assets/characters/slime-1-a.png"

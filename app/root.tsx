@@ -24,7 +24,7 @@ import type {
   HeadersFunction,
 } from 'remix';
 
-import styles from '~/styles/app.css';
+import styles from '~/styles/out.css';
 
 type LoaderData = {
   user: any;
