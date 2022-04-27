@@ -4,10 +4,15 @@ import type { FunctionComponent } from 'react';
 
 interface ComicBoxProps {
   children: React.ReactNode;
+  // eslint-disable-next-line react/require-default-props
+  className?: string;
 }
 
-export const ComicBox: FunctionComponent<ComicBoxProps> = ({ children }) => {
-  return <div className="comic-box">{children}</div>;
+export const ComicBox: FunctionComponent<ComicBoxProps> = ({
+  children,
+  className,
+}) => {
+  return <div className={classx('comic-box', className)}>{children}</div>;
 };
 
 interface ComicSpeechProps {

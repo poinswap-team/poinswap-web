@@ -1,5 +1,6 @@
 import {
   Anchor,
+  ComicBox,
   ComicSpeech,
   Image,
   ImageInteractive,
@@ -197,7 +198,7 @@ const StoryRoadmap = () => {
   return (
     <div id="home-story-roadmap">
       <div
-        className="comic-box flex min-h-[720px] flex-[2] flex-col items-center justify-start gap-1 space-y-4 bg-cover bg-center bg-no-repeat p-8"
+        className="flex min-h-[720px] flex-[2] flex-col items-center justify-center gap-1 space-y-4 bg-cover bg-center bg-no-repeat p-8"
         style={{
           backgroundImage: `url("${
             isLight
@@ -206,7 +207,40 @@ const StoryRoadmap = () => {
           }")`,
         }}
       >
-        <h2 className="font-comic text-center text-3xl">Roadmap</h2>
+        <h2 className="font-comic hidden text-center text-3xl">Roadmap</h2>
+        <div className="flex flex-col gap-8 md:flex-row">
+          <ComicBox className="flex w-full max-w-[320px] flex-col gap-4 p-4">
+            <h3 className="font-comic text-4xl font-bold">Q2 2022</h3>
+            <ul className="list-items text-xl">
+              <li>
+                Launch <b>$POIN</b> and smart contract
+              </li>
+              <li>VC Funding</li>
+              <li>Private Sale</li>
+              <li>Demo Account</li>
+              <li>Launch Alpha</li>
+            </ul>
+          </ComicBox>
+          <ComicBox className="flex w-full max-w-[320px] flex-col gap-4 p-4">
+            <h3 className="font-comic text-4xl font-bold">Q3 2022</h3>
+            <ul className="list-items text-xl">
+              <li>Launch Beta</li>
+              <li>Launch Airdrop</li>
+              <li>Genesis NFT</li>
+              <li>Launch Mini Games</li>
+              <li>Launch Token Category</li>
+            </ul>
+          </ComicBox>
+          <ComicBox className="flex w-full max-w-[320px] flex-col gap-4 p-4">
+            <h3 className="font-comic text-4xl font-bold">Q4 2022</h3>
+            <ul className="list-items text-xl">
+              <li>Public Sale</li>
+              <li>Poinswap Launch</li>
+              <li>Airdrop Distribution</li>
+              <li>Launch Premium Account</li>
+            </ul>
+          </ComicBox>
+        </div>
       </div>
     </div>
   );

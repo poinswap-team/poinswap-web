@@ -5670,6 +5670,11 @@ input[type=checkbox]:checked:hover:not(:disabled) + .form-switch, input[type=che
   padding-bottom: 0.25rem;
 }
 
+.list-items {
+  list-style-type: disc;
+  padding-left: 1rem;
+}
+
 .scroll-area-corner {
   background-color: rgba(var(--vc-colors-primary-800), 0.2);
 }
@@ -6207,6 +6212,10 @@ input[type=checkbox]:checked:hover:not(:disabled) + .form-switch, input[type=che
   max-width: 25ch;
 }
 
+.max-w-\[320px\] {
+  max-width: 320px;
+}
+
 .max-w-full {
   max-width: 100%;
 }
@@ -6404,6 +6413,10 @@ input[type=checkbox]:checked:hover:not(:disabled) + .form-switch, input[type=che
 
 .overflow-hidden {
   overflow: hidden;
+}
+
+.overflow-visible {
+  overflow: visible;
 }
 
 .scroll-smooth {
@@ -6630,6 +6643,10 @@ input[type=checkbox]:checked:hover:not(:disabled) + .form-switch, input[type=che
 
 .bg-cover {
   background-size: cover;
+}
+
+.bg-contain {
+  background-size: contain;
 }
 
 .bg-center {
@@ -7627,6 +7644,10 @@ input[type=checkbox]:checked:hover:not(:disabled) + .form-switch, input[type=che
 
   .md\:h-\[144px\] {
     height: 144px;
+  }
+
+  .md\:flex-row {
+    flex-direction: row;
   }
 
   .md\:p-4 {

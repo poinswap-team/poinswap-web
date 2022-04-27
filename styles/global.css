@@ -40,6 +40,10 @@
     @apply flex w-full flex-wrap gap-2 py-1;
   }
 
+  .list-items {
+    @apply list-disc pl-4;
+  }
+
   .scroll-area-corner {
     @apply bg-primary-800/20;
   }
