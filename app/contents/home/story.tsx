@@ -1,4 +1,5 @@
 import { Image, ImageInteractive, RemixLink, useTheme } from '~/components';
+import { dataMainFeatures } from '~/data';
 
 import type { FunctionComponent } from 'react';
 
@@ -85,24 +86,6 @@ const StoryStart = () => {
  * Story Features
  */
 const StoryFeatures = () => {
-  const dataMainFeatures = [
-    {
-      imageUrl: '/assets/icons/feature-swap.png',
-      name: 'Swap Token',
-      description: 'Description about this especially for metaverse.',
-    },
-    {
-      imageUrl: '/assets/icons/feature-token-a.png',
-      name: 'Curated Token',
-      description: 'Worry-free because we curate or filter the tokens.',
-    },
-    {
-      imageUrl: '/assets/icons/feature-retailmarket.png',
-      name: 'Retail Go To Market',
-      description: 'Some long description about this feature.',
-    },
-  ];
-
   return (
     <div id="home-story-features">
       <div className="comic-box flex flex-col items-center gap-8 p-12">
@@ -116,7 +99,7 @@ const StoryFeatures = () => {
               >
                 <Image src={feature.imageUrl} alt={feature.name} width={150} />
                 <h3 className="text-2xl font-bold">{feature.name}</h3>
-                <p className="max-w-[25ch] text-center text-xl">
+                <p className="max-w-[25ch] text-center text-lg ">
                   {feature.description}
                 </p>
               </div>
