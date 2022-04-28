@@ -4,8 +4,8 @@ export const dataOurPartners = [
     imageUrl: '/assets/partners/catamyst-light.png',
   },
   {
-    name: 'Microsoft Founders Hub',
-    imageUrl: '/assets/partners/microsoft-founders-hub-light.png',
+    name: 'Microsoft for Startups',
+    imageUrl: '/assets/partners/microsoft-for-startups.png',
   },
   {
     name: 'Kontenbase',

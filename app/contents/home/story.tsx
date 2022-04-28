@@ -268,7 +268,7 @@ export const StoryOurPartners = () => {
 
   return (
     <div id="home-story-our-partners">
-      <ComicBox className="story">
+      <div className="box-story">
         <H2>Our Partners</H2>
         <div className="flex flex-wrap items-center justify-center gap-8">
           {dataOurPartners.map((partner) => {
@@ -287,7 +287,7 @@ export const StoryOurPartners = () => {
             );
           })}
         </div>
-      </ComicBox>
+      </div>
     </div>
   );
 };
@@ -300,7 +300,7 @@ export const StoryPoweredPlatforms = () => {
 
   return (
     <div id="home-story-powered-platforms">
-      <ComicBox className="story">
+      <div className="box-story">
         <H2>Powered By</H2>
         <div className="flex flex-wrap items-center justify-center gap-8">
           {dataPoweredPlatforms.map((platform) => {
@@ -319,7 +319,7 @@ export const StoryPoweredPlatforms = () => {
             );
           })}
         </div>
-      </ComicBox>
+      </div>
     </div>
   );
 };
