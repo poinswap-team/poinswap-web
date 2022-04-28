@@ -9,7 +9,11 @@ import {
   RemixLink,
   useTheme,
 } from '~/components';
-import { dataMainFeatures } from '~/data';
+import {
+  dataMainFeatures,
+  dataOurPartners,
+  dataPoweredPlatforms,
+} from '~/data';
 
 import type { FunctionComponent } from 'react';
 
@@ -260,10 +264,29 @@ const StoryRoadmap = () => {
  * Story Our Partners
  */
 export const StoryOurPartners = () => {
+  const { isLight } = useTheme();
+
   return (
     <div id="home-story-our-partners">
       <ComicBox className="story">
         <H2>Our Partners</H2>
+        <div className="flex flex-wrap items-center justify-center gap-8">
+          {dataOurPartners.map((partner) => {
+            const partnerImageUrl = isLight
+              ? partner.imageLightUrl || partner.imageUrl
+              : partner.imageDarkUrl || partner.imageUrl;
+
+            return (
+              <div key={partner.name}>
+                <Image
+                  className="max-h-[100px] max-w-[200px]"
+                  alt={partner.name}
+                  src={partnerImageUrl}
+                />
+              </div>
+            );
+          })}
+        </div>
       </ComicBox>
     </div>
   );
@@ -273,10 +296,29 @@ export const StoryOurPartners = () => {
  * Story Powered Platforms
  */
 export const StoryPoweredPlatforms = () => {
+  const { isLight } = useTheme();
+
   return (
     <div id="home-story-powered-platforms">
       <ComicBox className="story">
         <H2>Powered By</H2>
+        <div className="flex flex-wrap items-center justify-center gap-8">
+          {dataPoweredPlatforms.map((platform) => {
+            const platformImageUrl = isLight
+              ? platform.imageLightUrl
+              : platform.imageDarkUrl;
+
+            return (
+              <div key={platform.name}>
+                <Image
+                  className="max-h-[100px] max-w-[250px]"
+                  alt={platform.name}
+                  src={platformImageUrl}
+                />
+              </div>
+            );
+          })}
+        </div>
       </ComicBox>
     </div>
   );
