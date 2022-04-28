@@ -84,7 +84,7 @@ export const StoryStart = () => {
         }}
       >
         <ComicSpeech>
-          We make it possible for retailers to create their own blockchain
+          We are a tech enabler for retailers to join the blockchain revolution
         </ComicSpeech>
         <ImageInteractive
           alt="Gary Vee Slime"
@@ -92,7 +92,9 @@ export const StoryStart = () => {
           srcHover="/assets/characters/slime-2-b.png"
           width={200}
         />
-        <ComicSpeech>in Avalance (AVAX) subnets</ComicSpeech>
+        <ComicSpeech>
+          by tokenizing point rewards through Poinswap DeFi protocols
+        </ComicSpeech>
       </div>
     </div>
   );
@@ -265,7 +267,7 @@ const StorySubscribe = () => {
         <section className="flex-section justify-center space-x-2">
           <RemixLink
             to="/discord"
-            className="btn btn-lg btn-solid rounded-base"
+            className="btn-solid btn btn-lg rounded-base"
             data-color="primary"
           >
             Join our Discord server
