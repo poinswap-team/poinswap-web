@@ -5,7 +5,9 @@ export const dataOurPartners = [
   },
   {
     name: 'Microsoft for Startups',
-    imageUrl: '/assets/partners/microsoft-for-startups.png',
+    imageUrl: '/assets/partners/microsoft-for-startups-light.png',
+    imageLightUrl: '/assets/partners/microsoft-for-startups-light.png',
+    imageDarkUrl: '/assets/partners/microsoft-for-startups-dark.png',
   },
   {
     name: 'Kontenbase',
