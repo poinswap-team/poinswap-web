@@ -2,6 +2,7 @@ import {
   Anchor,
   ComicBox,
   ComicSpeech,
+  H2,
   Image,
   ImageInteractive,
   LogoSpan,
@@ -23,6 +24,8 @@ export const HomeStory: FunctionComponent<HomeStoryProps> = () => {
       <StoryReasons />
       <StoryTokenomics />
       <StoryRoadmap />
+      <StoryOurPartners />
+      <StoryPoweredPlatforms />
       <StorySubscribe />
     </div>
   );
@@ -254,15 +257,39 @@ const StoryRoadmap = () => {
 };
 
 /**
+ * Story Our Partners
+ */
+export const StoryOurPartners = () => {
+  return (
+    <div id="home-story-our-partners">
+      <ComicBox className="story">
+        <H2>Our Partners</H2>
+      </ComicBox>
+    </div>
+  );
+};
+
+/**
+ * Story Powered Platforms
+ */
+export const StoryPoweredPlatforms = () => {
+  return (
+    <div id="home-story-powered-platforms">
+      <ComicBox className="story">
+        <H2>Powered By</H2>
+      </ComicBox>
+    </div>
+  );
+};
+
+/**
  * Story Subscribe
  */
 const StorySubscribe = () => {
   return (
     <div id="home-story-subscribe">
       <div className="comic-box flex flex-col items-center justify-center gap-1 space-y-4 p-8">
-        <h2 className="font-comic text-center text-3xl">
-          Subscribe for updates
-        </h2>
+        <H2>Subscribe for updates</H2>
         <Image
           height={300}
           className="max-h-[300px]"
