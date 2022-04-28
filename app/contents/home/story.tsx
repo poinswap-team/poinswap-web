@@ -93,7 +93,7 @@ export const StoryStart = () => {
           width={200}
         />
         <ComicSpeech>
-          by tokenizing point rewards through Poinswap DeFi protocols
+          by tokenizing point rewards through <LogoSpan /> DeFi protocols
         </ComicSpeech>
       </div>
     </div>
@@ -267,7 +267,7 @@ const StorySubscribe = () => {
         <section className="flex-section justify-center space-x-2">
           <RemixLink
             to="/discord"
-            className="btn-solid btn btn-lg rounded-base"
+            className="btn btn-lg btn-solid rounded-base"
             data-color="primary"
           >
             Join our Discord server

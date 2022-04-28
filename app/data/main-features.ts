@@ -3,23 +3,24 @@ export const dataMainFeatures = [
     imageUrl: '/assets/icons/feature-token-a.png',
     name: 'Token Categories',
     description:
-      'Curated token with token categories based on their sectors and interest.',
+      'Poinswap curate and organize tokens based on their sectors and categories',
   },
   {
     imageUrl: '/assets/icons/feature-nft.png',
     name: 'Poinmall',
-    description: 'A metaverse project for retailers to rent out space.',
+    description:
+      'Poinmall is a metaverse project for retailers to rent out space and sell their products',
   },
   {
     imageUrl: '/assets/icons/feature-orderbook.png',
     name: 'Community Fund',
     description:
-      'Some transaction fee will go into the community vault, to be used through voting in Poinswap DAO.',
+      'The percentage of the transaction fee will go into the community vault to be used through voting in Poinswap DAO',
   },
   {
     imageUrl: '/assets/icons/feature-retailmarket.png',
     name: 'RetailFi',
     description:
-      'Building RetailFi infra through retail launchpad and retail profile staking.',
+      'Building RetailFi ecosystem through retail launchpad, retail profile, profile staking, and allow-listing retail subnets',
   },
 ];
