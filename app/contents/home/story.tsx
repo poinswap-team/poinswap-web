@@ -309,13 +309,13 @@ export const StoryPoweredPlatforms = () => {
               : platform.imageDarkUrl;
 
             return (
-              <div key={platform.name}>
+              <Anchor href={platform.url} key={platform.name}>
                 <Image
                   className="max-h-[100px] max-w-[250px]"
                   alt={platform.name}
                   src={platformImageUrl}
                 />
-              </div>
+              </Anchor>
             );
           })}
         </div>
