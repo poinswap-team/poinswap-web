@@ -21,6 +21,6 @@ export const dataMainFeatures = [
     imageUrl: '/assets/icons/feature-retailmarket.png',
     name: 'RetailFi',
     description:
-      'Building RetailFi ecosystem through retail launchpad, retail profile, profile staking, and allow-listing retail subnets',
+      'Building RetailFi ecosystem through retail launchpad, retail profile, profile staking, and whitelisting retail subnets',
   },
 ];

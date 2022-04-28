@@ -169,8 +169,10 @@ const StoryReasons = () => {
           width={200}
         />
         <ComicSpeech>
-          Currently we are preparing the opening of the{' '}
-          <RemixLink to="/privatesale">private sale</RemixLink>
+          Currently we are preparing to open{' '}
+          <RemixLink className="font-bold text-primary-500" to="/privatesale">
+            the private sale
+          </RemixLink>
         </ComicSpeech>
       </div>
     </div>
