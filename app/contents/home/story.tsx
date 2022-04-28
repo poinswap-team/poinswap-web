@@ -339,20 +339,20 @@ const StorySubscribe = () => {
           src="/assets/characters/slime-5-a.png"
         />
         <section className="flex-section justify-center space-x-2">
-          <RemixLink
-            to="/discord"
+          <Anchor
+            href="https://poinswap.com/discord"
             className="btn btn-lg btn-solid rounded-base"
             data-color="primary"
           >
             Join our Discord server
-          </RemixLink>
-          <RemixLink
-            to="/twitter"
+          </Anchor>
+          <Anchor
+            href="https://poinswap.com/twitter"
             className="btn-outline btn btn-lg rounded-base"
             data-color="primary"
           >
             Follow us on Twitter
-          </RemixLink>
+          </Anchor>
         </section>
       </div>
     </div>
