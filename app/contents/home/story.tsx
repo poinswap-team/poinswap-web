@@ -214,32 +214,35 @@ const StoryRoadmap = () => {
           <ComicBox className="flex w-full max-w-[320px] flex-col gap-4 p-4">
             <h3 className="font-comic text-4xl font-bold">Q2 2022</h3>
             <ul className="list-items text-xl">
-              <li>
-                Launch <b>$POIN</b> and smart contract
-              </li>
+              <li>Launch $POIN and smart contract</li>
               <li>VC Funding</li>
               <li>Private Sale</li>
               <li>Demo Account</li>
               <li>Launch Alpha</li>
+              <li>Staking Event</li>
+              <li>Pre-sale</li>
             </ul>
           </ComicBox>
           <ComicBox className="flex w-full max-w-[320px] flex-col gap-4 p-4">
             <h3 className="font-comic text-4xl font-bold">Q3 2022</h3>
             <ul className="list-items text-xl">
+              <li>Public Sale</li>
               <li>Launch Beta</li>
-              <li>Launch Airdrop</li>
+              <li>Airdrop Campaign</li>
               <li>Genesis NFT</li>
               <li>Launch Mini Games</li>
-              <li>Launch Token Category</li>
+              <li>Community Building</li>
             </ul>
           </ComicBox>
           <ComicBox className="flex w-full max-w-[320px] flex-col gap-4 p-4">
             <h3 className="font-comic text-4xl font-bold">Q4 2022</h3>
             <ul className="list-items text-xl">
-              <li>Public Sale</li>
-              <li>Poinswap Launch</li>
+              <li>Poinswap v1 Launch</li>
+              <li>Token Category</li>
               <li>Airdrop Distribution</li>
-              <li>Launch Premium Account</li>
+              <li>Retail Launchpad</li>
+              <li>Retail Profile</li>
+              <li>Community Fund</li>
             </ul>
           </ComicBox>
         </div>
