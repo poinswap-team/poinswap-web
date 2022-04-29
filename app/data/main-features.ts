@@ -6,7 +6,7 @@ export const dataMainFeatures = [
       'Poinswap curate and organize tokens based on their sectors and categories',
   },
   {
-    imageUrl: '/assets/icons/feature-nft.png',
+    imageUrl: '/assets/icons/feature-poinmall.png',
     name: 'Poinmall',
     description:
       'Poinmall is a metaverse project for retailers to rent out space and sell their products',
