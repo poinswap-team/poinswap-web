@@ -21,7 +21,7 @@ interface HomeStoryProps {}
 
 export const HomeStory: FunctionComponent<HomeStoryProps> = () => {
   return (
-    <div className="flex flex-col space-y-4 px-4 md:px-8">
+    <div className="flex flex-col space-y-8 px-4 md:px-8">
       {/* <StoryIntro /> */}
       <StoryStart />
       <StoryFeatures />
@@ -113,7 +113,7 @@ export const StoryStart = () => {
 const StoryFeatures = () => {
   return (
     <div id="home-story-features">
-      <div className="comic-box flex flex-col items-center gap-8 p-12">
+      <div className="flex flex-col items-center gap-8 p-12">
         <h2 className="font-comic text-center text-3xl">Main Features</h2>
         <div className="flex flex-col gap-8 sm:flex-row">
           {dataMainFeatures.map((feature) => {
@@ -192,7 +192,7 @@ const StoryReasons = () => {
 const StoryTokenomics = () => {
   return (
     <div id="home-story-tokenomics">
-      <div className="comic-box flex flex-col items-center justify-center gap-1 space-y-4 p-8">
+      <div className="flex flex-col items-center justify-center gap-1 space-y-4 p-8">
         <h2 className="font-comic text-center text-3xl">Tokenomics</h2>
         <Image alt="Tokenomics Chart" src="/assets/images/tokenomics.svg" />
       </div>
@@ -209,12 +209,12 @@ const StoryRoadmap = () => {
   return (
     <div id="home-story-roadmap">
       <div
-        className="flex min-h-[720px] flex-[2] flex-col items-center justify-center gap-1 space-y-4 bg-cover bg-center bg-no-repeat p-8"
+        className="flex min-h-[720px] flex-[2] flex-col items-center justify-center gap-1 space-y-4 bg-cover bg-center bg-no-repeat p-12"
         style={{
           backgroundImage: `url("${
             isLight
-              ? '/assets/backgrounds/roadmap.jpg'
-              : '/assets/backgrounds/roadmap-dark.jpg'
+              ? '/assets/backgrounds/roadmap-light.png'
+              : '/assets/backgrounds/roadmap-dark.png'
           }")`,
         }}
       >
@@ -330,7 +330,7 @@ export const StoryPoweredPlatforms = () => {
 const StorySubscribe = () => {
   return (
     <div id="home-story-subscribe">
-      <div className="comic-box flex flex-col items-center justify-center gap-1 space-y-4 p-8">
+      <div className="flex flex-col items-center justify-center gap-1 space-y-4 p-8">
         <H2>Subscribe for updates</H2>
         <Image
           height={300}
