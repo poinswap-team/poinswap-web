@@ -190,11 +190,40 @@ const StoryReasons = () => {
  * Story Tokenomics
  */
 const StoryTokenomics = () => {
+  const { isLight } = useTheme();
+
   return (
     <div id="home-story-tokenomics">
       <div className="flex flex-col items-center justify-center gap-1 space-y-4 p-8">
         <h2 className="font-comic text-center text-3xl">Tokenomics</h2>
-        <Image alt="Tokenomics Chart" src="/assets/images/tokenomics.svg" />
+        <div className="flex flex-col items-center gap-8 lg:flex-row">
+          <Image
+            className="max-h-[400px]"
+            alt="Tokenomics Chart"
+            src={
+              isLight
+                ? '/assets/images/tokenomics-light.png'
+                : '/assets/images/tokenomics-dark.png'
+            }
+          />
+          <ul className="list-items space-y-2 text-xl">
+            <li>
+              Staking and Ecosystem: <b>40%</b>
+            </li>
+            <li>
+              Team and Future Team: <b>20%</b>
+            </li>
+            <li>
+              VC and Advisors: <b>21%</b>
+            </li>
+            <li>
+              Private Sale, IDO, Airdrop: <b>10%</b>
+            </li>
+            <li>
+              Inflation and Reserve: <b>9%</b>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   );

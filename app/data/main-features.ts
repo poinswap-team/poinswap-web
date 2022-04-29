@@ -6,6 +6,12 @@ export const dataMainFeatures = [
       'Poinswap curate and organize tokens based on their sectors and categories',
   },
   {
+    imageUrl: '/assets/icons/feature-retail.png',
+    name: 'RetailFi',
+    description:
+      'Building RetailFi ecosystem through retail launchpad, retail profile, profile staking, and whitelisting retail subnets',
+  },
+  {
     imageUrl: '/assets/icons/feature-poinmall.png',
     name: 'Poinmall',
     description:
@@ -16,11 +22,5 @@ export const dataMainFeatures = [
     name: 'Community Fund',
     description:
       'The percentage of the transaction fee will go into the community vault to be used through voting in Poinswap DAO',
-  },
-  {
-    imageUrl: '/assets/icons/feature-retailmarket.png',
-    name: 'RetailFi',
-    description:
-      'Building RetailFi ecosystem through retail launchpad, retail profile, profile staking, and whitelisting retail subnets',
   },
 ];
