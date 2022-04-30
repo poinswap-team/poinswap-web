@@ -70,6 +70,7 @@ const subscribeToConvertKit = async ({
       api_key: getEnvServer('CONVERTKIT_API_KEY'),
       email,
       first_name: firstName,
+      tags: ['privatesale-interested'],
     };
 
     const response = await axios.post(
