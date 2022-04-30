@@ -15,7 +15,7 @@ import {
 import { H1, NProgress, ThemeProvider } from '~/components';
 import { configApp } from '~/configs';
 import { commitSession, getSession } from '~/sessions';
-import { getEnv } from '~/utils';
+import { createMetaData, getEnv } from '~/utils';
 
 import type {
   LinksFunction,
@@ -103,23 +103,7 @@ export const links: LinksFunction = () => {
 };
 
 export const meta: MetaFunction = () => {
-  return {
-    charset: 'utf-8',
-    viewport: 'width=device-width,initial-scale=1',
-    title: 'Poinswap — Your friendly neighborhood DEX. Pioneering RetailFi',
-    description:
-      'Poinswap is a user friendly and curated Decentralized Crypto Exchange (DEX) designed for retailers and experienced beginners in crypto market ',
-    name: 'Poinswap',
-    url: 'https://poinswap.com/',
-    route: '',
-    color: '#0081f1',
-    ogImageAlt: 'The website of Poinswap DEX (Crypto Decentralized Exchange)',
-    ogImageUrl: 'https://poinswap.com/assets/opengraph/poinswap-og.jpg',
-    ogImageType: 'image/jpeg',
-    twiterImageUrl: 'https://poinswap.com/assets/opengraph/poinswap-og.jpg',
-    fbAppId: '',
-    locale: 'en_US',
-  };
+  return createMetaData();
 };
 
 export const loader: LoaderFunction = async ({ request }) => {
