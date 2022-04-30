@@ -35,6 +35,7 @@
     "@urql/core": "2.4.4",
     "@vechaiui/core": "0.6.0",
     "@vechaiui/react": "0.2.2",
+    "axios": "0.27.2",
     "clsx": "1.1.1",
     "daisyui": "2.14.1",
     "date-fns": "2.28.0",
