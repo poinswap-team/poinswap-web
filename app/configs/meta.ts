@@ -7,9 +7,9 @@ export const configMetaDefault = {
   route: '',
   color: '#0081f1',
   ogImageAlt: 'The website of Poinswap Crypto Exchange (DEX)',
-  ogImageUrl: 'images/poinswap-og.jpg?v=3',
+  ogImageUrl: 'images/poinswap-og.jpg',
   ogImageType: 'image/jpeg',
-  twiterImageUrl: 'images/poinswap-og.jpg?v=3',
+  twiterImageUrl: 'images/poinswap-og.jpg',
   fbAppId: '',
   locale: 'en_US',
 };

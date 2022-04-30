@@ -114,9 +114,9 @@ export const meta: MetaFunction = () => {
     route: '',
     color: '#0081f1',
     ogImageAlt: 'The website of Poinswap DEX (Crypto Decentralized Exchange)',
-    ogImageUrl: 'assets/opengraph/poinswap-og.jpg',
+    ogImageUrl: 'https://poinswap.com/assets/opengraph/poinswap-og.jpg',
     ogImageType: 'image/jpeg',
-    twiterImageUrl: 'assets/opengraph/poinswap-og.jpg',
+    twiterImageUrl: 'https://poinswap.com/assets/opengraph/poinswap-og.jpg',
     fbAppId: '',
     locale: 'en_US',
   };
