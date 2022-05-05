@@ -1,6 +1,4 @@
 /* eslint-disable react/require-default-props */
-import { classx } from '~/utils';
-
 import type { FunctionComponent } from 'react';
 
 interface AnchorProps {
@@ -18,7 +16,7 @@ export const Anchor: FunctionComponent<AnchorProps> = ({
 }) => {
   return (
     <a
-      className={classx(className)}
+      className={className}
       href={href}
       target="_blank"
       rel="noreferrer"
