@@ -30,9 +30,9 @@ export const meta: MetaFunction = ({ data }) => {
   }
 
   return {
-    title: `${article.title} — Poinswap Blog`,
-    description: article.summary,
-    'og:image': article.coverImage.url,
+    title: `${article?.title} — Poinswap Blog`,
+    description: article?.summary,
+    'og:image': article?.coverImage?.url,
   };
 };
 
@@ -57,8 +57,10 @@ export default function BlogArticlePage() {
 
   return (
     <Layout className="prose dark:prose-invert">
-      <Image src={article.coverImage.url} alt={article.title} />
-      <h1>{article.title}</h1>
+      {article?.coverImage && (
+        <Image src={article?.coverImage?.url} alt={article?.title} />
+      )}
+      <h1>{article?.title}</h1>
       <div>{parse(String(article?.content?.html))}</div>
     </Layout>
   );

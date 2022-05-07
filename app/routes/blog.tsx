@@ -54,11 +54,13 @@ export default function BlogRoute() {
       <div className="flex flex-col space-y-12">
         {articles.map((article) => {
           return (
-            <RemixLink key={article.id} to={article.slug}>
+            <RemixLink key={article?.id} to={article?.slug}>
               <div className="flex flex-col space-y-4">
-                <Image src={article.coverImage.url} alt={article.title} />
-                <h2 className="text-3xl font-bold">{article.title}</h2>
-                <p className="text-md">{article.summary}</p>
+                {article?.coverImage && (
+                  <Image src={article?.coverImage?.url} alt={article?.title} />
+                )}
+                <h2 className="text-3xl font-bold">{article?.title}</h2>
+                <p className="text-md">{article?.summary}</p>
               </div>
             </RemixLink>
           );
