@@ -1,5 +1,5 @@
 import parse from 'html-react-parser';
-import { json, useLoaderData } from 'remix';
+import { json, redirect, useLoaderData } from 'remix';
 
 import { Image, Layout } from '~/components';
 import { QUERY_ALL_ARTICLES, QUERY_ONE_ARTICLE_BY_SLUG } from '~/graphql';
@@ -14,7 +14,7 @@ export const handle: SEOHandle = {
     const { articles } = response.data;
 
     return articles.map((article: any) => {
-      return { route: `/blog/${article.slug}`, priority: 0.8 };
+      return { route: `/blog/${article?.slug}`, priority: 0.8 };
     });
   },
 };
@@ -44,6 +44,10 @@ export const loader: LoaderFunction = async ({ params }) => {
     .toPromise();
 
   const { article } = response.data;
+
+  if (!article) {
+    return redirect('/blog');
+  }
 
   return json({ article });
 };
