@@ -12,7 +12,7 @@ import {
   useTransition,
 } from 'remix';
 
-import { H1, NProgress, ThemeProvider } from '~/components';
+import { H1, Layout, NProgress, ThemeProvider } from '~/components';
 import { configApp } from '~/configs';
 import { commitSession, getSession } from '~/sessions';
 import { createMetaData, getEnv } from '~/utils';
@@ -190,14 +190,15 @@ export function CatchBoundary() {
 
   return (
     <Document>
-      <H1>Remix Caught</H1>
-
-      <div>
-        <p>Status: {caught.status}</p>
-        <pre>
-          <code>{JSON.stringify(caught.data, null, 2)}</code>
-        </pre>
-      </div>
+      <Layout className="prose dark:prose-invert">
+        <H1>Caught</H1>
+        <div>
+          <p>Status: {caught.status}</p>
+          <pre>
+            <code>{JSON.stringify(caught.data, null, 2)}</code>
+          </pre>
+        </div>
+      </Layout>
     </Document>
   );
 }
@@ -205,13 +206,14 @@ export function CatchBoundary() {
 export function ErrorBoundary({ error }: { error: Error }) {
   return (
     <Document>
-      <H1>Remix Error</H1>
-
-      <div>
-        <p>{error.message}</p>
-        <p>The stack trace is:</p>
-        <pre>{error.stack}</pre>
-      </div>
+      <Layout className="prose dark:prose-invert">
+        <H1>Error</H1>
+        <div>
+          <p>{error.message}</p>
+          <p>The stack trace is:</p>
+          <pre>{error.stack}</pre>
+        </div>
+      </Layout>
     </Document>
   );
 }
