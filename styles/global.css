@@ -33,6 +33,10 @@
     @apply rounded-sm border-2 border-primary-900 bg-neutral-50 p-2 dark:bg-neutral-900;
   }
 
+  .comic-box-transparent {
+    @apply rounded-sm bg-neutral-50/80 p-2 dark:bg-neutral-900/80;
+  }
+
   .box-story {
     @apply flex flex-col items-center justify-center gap-1 space-y-4 p-8;
   }
