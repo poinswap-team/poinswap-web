@@ -47,19 +47,25 @@ export default function BlogRoute() {
 
   return (
     <Layout>
-      <h1 className="font-comic mb-14 text-4xl text-primary-500">
+      <h1 className="font-comic mb-8 text-4xl text-primary-500">
         Blog Articles
       </h1>
 
-      <div className="flex flex-col space-y-12">
+      <div className="prose-config flex flex-col space-y-8 prose-a:no-underline">
         {articles.map((article) => {
           return (
             <RemixLink key={article?.id} to={article?.slug}>
-              <div className="flex flex-col space-y-4">
+              <div className="flex flex-col">
                 {article?.coverImage && (
-                  <Image src={article?.coverImage?.url} alt={article?.title} />
+                  <Image
+                    className="rounded-md"
+                    src={article?.coverImage?.url}
+                    alt={article?.title}
+                  />
                 )}
-                <h2 className="text-3xl font-bold">{article?.title}</h2>
+                <h2 className="mt-0 text-2xl font-bold md:text-3xl">
+                  {article?.title}
+                </h2>
                 <p className="text-md">{article?.summary}</p>
               </div>
             </RemixLink>

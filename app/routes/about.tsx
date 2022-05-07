@@ -16,7 +16,7 @@ export default function AboutRoute() {
   const data = useLoaderData<LoaderData>();
 
   return (
-    <Layout className="prose dark:prose-invert">
+    <Layout className="prose-config">
       <h1 className="font-comic text-primary-500">About Poinswap</h1>
 
       <p>Your friendly neighborhood DEX.</p>

@@ -20,8 +20,8 @@ export const HomeHero: FunctionComponent<HomeHeroProps> = () => {
       }}
     >
       <div id="home-hero-box-characters" className="px-4">
-        <div className="comic-box mt-32 flex flex-col space-y-4 p-5">
-          <h1 className="font-comic max-w-[36ch] text-xl leading-normal sm:text-center md:text-3xl">
+        <div className="mt-32 flex flex-col space-y-4 p-5 sm:mt-28">
+          <h1 className="max-w-[36ch] text-2xl font-bold leading-normal sm:text-center md:text-4xl">
             Pioneering RetailFi with user friendly and curated Crypto
             Decentralized Exchange (DEX)
           </h1>

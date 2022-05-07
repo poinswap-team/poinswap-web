@@ -13,7 +13,7 @@ export default function PrivateSaleRoute() {
   const actionData = useActionData();
 
   return (
-    <Layout className="prose dark:prose-invert">
+    <Layout className="prose-config">
       <h1 className="font-comic text-primary-500">Private Sale</h1>
       <p>
         The token private sale is opening soon. For now, please subscribe here

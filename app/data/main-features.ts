@@ -3,7 +3,7 @@ export const dataMainFeatures = [
     imageUrl: '/assets/icons/feature-token-a.png',
     name: 'Token Categories',
     description:
-      'Poinswap curate and organize tokens based on their sectors and categories',
+      'Hard to find the right token? Poinswap curate and organize the best tokens for you based on their sectors and categories',
   },
   {
     imageUrl: '/assets/icons/feature-retail.png',

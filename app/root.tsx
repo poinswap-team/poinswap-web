@@ -80,7 +80,7 @@ export const links: LinksFunction = () => {
       rel: 'preconnect',
     },
     {
-      href: 'https://fontbit.io/css2?family=Lato&display=swap',
+      href: 'https://fontbit.io/css2?family=Archivo&display=swap',
       rel: 'stylesheet',
     },
     {
@@ -89,10 +89,6 @@ export const links: LinksFunction = () => {
     },
     {
       href: 'https://fontbit.io/css2?family=Fuzzy+Bubbles:wght@700&display=swap',
-      rel: 'stylesheet',
-    },
-    {
-      href: 'https://fontbit.io/css2?family=Short+Stack&display=swap',
       rel: 'stylesheet',
     },
     {
@@ -190,7 +186,7 @@ export function CatchBoundary() {
 
   return (
     <Document>
-      <Layout className="prose dark:prose-invert">
+      <Layout className="prose-config">
         <H1>Caught</H1>
         <div>
           <p>Status: {caught.status}</p>
@@ -206,7 +202,7 @@ export function CatchBoundary() {
 export function ErrorBoundary({ error }: { error: Error }) {
   return (
     <Document>
-      <Layout className="prose dark:prose-invert">
+      <Layout className="prose-config">
         <H1>Error</H1>
         <div>
           <p>{error.message}</p>

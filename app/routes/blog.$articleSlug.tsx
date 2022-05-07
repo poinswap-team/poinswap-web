@@ -60,7 +60,7 @@ export default function BlogArticlePage() {
   const { article } = useLoaderData<LoaderData>();
 
   return (
-    <Layout className="prose dark:prose-invert">
+    <Layout className="prose-config">
       {article?.coverImage && (
         <Image src={article?.coverImage?.url} alt={article?.title} />
       )}

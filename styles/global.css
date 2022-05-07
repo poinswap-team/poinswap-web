@@ -4,7 +4,7 @@
 
 @layer base {
   html {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Archivo', sans-serif;
     @apply tracking-wide;
   }
   a {
@@ -19,6 +19,11 @@
 }
 
 @layer components {
+  .prose-config {
+    @apply prose dark:prose-invert md:prose-lg;
+    @apply prose-h1:leading-normal prose-h2:leading-normal;
+  }
+
   .font-comic {
     font-family: 'Fuzzy Bubbles', sans-serif;
     @apply font-bold;
