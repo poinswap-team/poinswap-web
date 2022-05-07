@@ -18,7 +18,6 @@ export const MenuNavigation: FunctionComponent<MenuNavigationProps> = () => {
     <div className="flex w-full select-none flex-wrap">
       <Menu as="div" className="relative inline-block ">
         <Menu.Button
-          className="hidden sm:flex"
           as={Button}
           variant="solid"
           color="primary"
@@ -27,15 +26,6 @@ export const MenuNavigation: FunctionComponent<MenuNavigationProps> = () => {
           }
         >
           Menu
-        </Menu.Button>
-
-        <Menu.Button
-          className="flex sm:hidden"
-          as={IconButton}
-          variant="solid"
-          color="primary"
-        >
-          <Icon as={MenuIcon} label="Menu" className="h-4 w-4" />
         </Menu.Button>
 
         <Transition

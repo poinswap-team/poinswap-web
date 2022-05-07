@@ -29,7 +29,7 @@ export const NavigationBar: FunctionComponent<NavigationBarProps> = () => {
             >
               <Logo />
             </RemixLink>
-            <Badge color="primary" variant="solid">
+            <Badge color="primary" variant="solid" className="hidden sm:block">
               Alpha
             </Badge>
           </div>
@@ -62,8 +62,8 @@ export const NavigationBar: FunctionComponent<NavigationBarProps> = () => {
 
         <div className="flex items-center space-x-1 sm:space-x-2">
           <ExternalLinks className="hidden text-xl sm:flex" />
-          <NavigationBarMenu />
           <ThemeSwitcher />
+          <NavigationBarMenu />
         </div>
       </div>
     </nav>
@@ -86,7 +86,7 @@ export const NavigationBarAuth: FunctionComponent<
       </RemixLink>
       <RemixLink
         to="/signup"
-        className="btn btn-md btn-solid"
+        className="btn-solid btn btn-md"
         data-color="primary"
       >
         Sign up

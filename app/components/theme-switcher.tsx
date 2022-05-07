@@ -34,7 +34,7 @@ export const ThemeSwitcher = () => {
               as={IconButton}
               size="md"
               color="primary"
-              variant="solid"
+              variant="ghost"
             >
               <Icon
                 as={AdjustmentsIcon}
