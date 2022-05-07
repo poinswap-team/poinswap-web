@@ -1,5 +1,4 @@
 export const configNavigationLinks = [
-  { to: '/', text: 'Home' },
   { to: '/about', text: 'About' },
   { to: '/blog', text: 'Blog' },
   { to: '/demo', text: 'Demo' },
@@ -7,4 +6,7 @@ export const configNavigationLinks = [
   { to: '/whitepaper', text: 'Whitepaper' },
 ];
 
-export const configNavigationLinksMenu = [...configNavigationLinks];
+export const configNavigationLinksMenu = [
+  { to: '/', text: 'Home' },
+  ...configNavigationLinks,
+];
