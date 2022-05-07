@@ -47,7 +47,7 @@ export default function BlogRoute() {
 
   return (
     <Layout>
-      <h1 className="font-comic mb-8 text-4xl text-primary-500">
+      <h1 className="font-accent mb-8 text-4xl text-primary-500">
         Blog Articles
       </h1>
 

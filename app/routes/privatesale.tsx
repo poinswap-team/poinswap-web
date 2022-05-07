@@ -14,7 +14,7 @@ export default function PrivateSaleRoute() {
 
   return (
     <Layout className="prose-config">
-      <h1 className="font-comic text-primary-500">Private Sale</h1>
+      <h1 className="font-accent text-primary-500">Private Sale</h1>
       <p>
         The token private sale is opening soon. For now, please subscribe here
         for updates. As you will be invited through email. You can also{' '}

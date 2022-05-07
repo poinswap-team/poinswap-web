@@ -24,8 +24,7 @@
     @apply prose-h1:leading-normal prose-h2:leading-normal;
   }
 
-  .font-comic {
-    font-family: 'Fuzzy Bubbles', sans-serif;
+  .font-accent {
     @apply font-bold;
   }
 

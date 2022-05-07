@@ -39,7 +39,7 @@ export const StoryIntro = () => {
   return (
     <div id="home-story-intro">
       <div className="flex justify-center">
-        <h2 className="font-comic text-center text-3xl">
+        <h2 className="font-accent text-center text-3xl">
           (Stay tuned. We are revamping the homepage)
         </h2>
       </div>
@@ -114,8 +114,8 @@ const StoryFeatures = () => {
   return (
     <div id="home-story-features">
       <div className="flex flex-col items-center gap-8 p-12">
-        <h2 className="font-comic text-center text-3xl">Main Features</h2>
-        <div className="flex flex-col gap-8 sm:flex-row">
+        <h2 className="font-accent text-center text-3xl">Main Features</h2>
+        <div className="flex flex-col flex-wrap justify-center gap-8 sm:flex-row">
           {dataMainFeatures.map((feature) => {
             return (
               <div
@@ -123,7 +123,7 @@ const StoryFeatures = () => {
                 className="flex flex-col items-center gap-2"
               >
                 <Image src={feature.imageUrl} alt={feature.name} width={150} />
-                <h3 className="font-comic text-2xl font-bold">
+                <h3 className="font-accent text-2xl font-bold">
                   {feature.name}
                 </h3>
                 <p className="max-w-[25ch] text-center text-lg ">
@@ -195,7 +195,7 @@ const StoryTokenomics = () => {
   return (
     <div id="home-story-tokenomics">
       <div className="flex flex-col items-center justify-center gap-1 space-y-4 p-8">
-        <h2 className="font-comic text-center text-3xl">Tokenomics</h2>
+        <h2 className="font-accent text-center text-3xl">Tokenomics</h2>
         <div className="flex flex-col items-center gap-8 lg:flex-row">
           <Image
             className="max-h-[400px]"
@@ -247,10 +247,10 @@ const StoryRoadmap = () => {
           }")`,
         }}
       >
-        <h2 className="font-comic hidden text-center text-3xl">Roadmap</h2>
+        <h2 className="font-accent hidden text-center text-3xl">Roadmap</h2>
         <div className="flex flex-col gap-8 md:flex-row">
           <ComicBox className="flex w-full max-w-[320px] flex-col gap-4 p-4">
-            <h3 className="font-comic text-4xl font-bold">Q2 2022</h3>
+            <h3 className="font-accent text-4xl font-bold">Q2 2022</h3>
             <ul className="list-items text-xl">
               <li>Launch $POIN and smart contract</li>
               <li>VC Funding</li>
@@ -262,7 +262,7 @@ const StoryRoadmap = () => {
             </ul>
           </ComicBox>
           <ComicBox className="flex w-full max-w-[320px] flex-col gap-4 p-4">
-            <h3 className="font-comic text-4xl font-bold">Q3 2022</h3>
+            <h3 className="font-accent text-4xl font-bold">Q3 2022</h3>
             <ul className="list-items text-xl">
               <li>Public Sale</li>
               <li>Launch Beta</li>
@@ -273,7 +273,7 @@ const StoryRoadmap = () => {
             </ul>
           </ComicBox>
           <ComicBox className="flex w-full max-w-[320px] flex-col gap-4 p-4">
-            <h3 className="font-comic text-4xl font-bold">Q4 2022</h3>
+            <h3 className="font-accent text-4xl font-bold">Q4 2022</h3>
             <ul className="list-items text-xl">
               <li>Poinswap v1 Launch</li>
               <li>Token Category</li>

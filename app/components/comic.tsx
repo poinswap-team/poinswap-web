@@ -28,7 +28,7 @@ export const ComicSpeech: FunctionComponent<ComicSpeechProps> = ({
   return (
     <div
       className={classx(
-        'comic-box font-comic p-4 text-center text-xl',
+        'comic-box p-4 text-center text-xl font-bold',
         className
       )}
     >

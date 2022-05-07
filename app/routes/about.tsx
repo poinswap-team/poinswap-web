@@ -17,7 +17,7 @@ export default function AboutRoute() {
 
   return (
     <Layout className="prose-config">
-      <h1 className="font-comic text-primary-500">About Poinswap</h1>
+      <h1 className="font-accent text-primary-500">About Poinswap</h1>
 
       <p>Your friendly neighborhood DEX.</p>
 
