@@ -1,4 +1,4 @@
-import { gql } from '@urql/core'
+import { gql } from '@urql/core';
 
 export const FRAGMENT_ARTICLE = gql`
   fragment ArticleDetails on Article {
@@ -16,17 +16,17 @@ export const FRAGMENT_ARTICLE = gql`
       markdown
     }
   }
-`
+`;
 
 export const QUERY_ALL_ARTICLES = gql`
   query AllArticles($first: Int, $skip: Int) {
-    articles(orderBy: updatedAt_DESC, first: $first, skip: $skip) {
+    articles(orderBy: date_DESC, first: $first, skip: $skip) {
       ...ArticleDetails
     }
   }
 
   ${FRAGMENT_ARTICLE}
-`
+`;
 
 export const QUERY_ONE_ARTICLE_BY_SLUG = gql`
   query OneArticleBySlug($articleSlug: String!) {
@@ -36,4 +36,4 @@ export const QUERY_ONE_ARTICLE_BY_SLUG = gql`
   }
 
   ${FRAGMENT_ARTICLE}
-`
+`;

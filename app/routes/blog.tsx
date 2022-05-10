@@ -23,7 +23,7 @@ export const meta: MetaFunction = ({ data }) => {
 export const loader: LoaderFunction = async ({ request }) => {
   const url = new URL(request.url);
   const pageQuery = Number(url.searchParams.get('page'));
-  const itemsPerPage = 10;
+  const itemsPerPage = 100;
   const first = itemsPerPage;
   const skip = pageQuery > 1 ? itemsPerPage * pageQuery - itemsPerPage : 0;
 
