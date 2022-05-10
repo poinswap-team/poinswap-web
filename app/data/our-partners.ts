@@ -1,13 +1,21 @@
 export const dataOurPartners = [
   {
-    name: 'Catamyst',
-    imageUrl: '/assets/partners/catamyst-light.png',
-  },
-  {
     name: 'Microsoft for Startups',
     imageUrl: '/assets/partners/microsoft-for-startups-light.png',
     imageLightUrl: '/assets/partners/microsoft-for-startups-light.png',
     imageDarkUrl: '/assets/partners/microsoft-for-startups-dark.png',
+  },
+  {
+    name: 'ELLD',
+    imageUrl: '/assets/partners/elld.png',
+  },
+  {
+    name: 'Owner.co.id',
+    imageUrl: '/assets/partners/ownercoid.png',
+  },
+  {
+    name: 'Catamyst',
+    imageUrl: '/assets/partners/catamyst-light.png',
   },
   {
     name: 'Kontenbase',

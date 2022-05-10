@@ -13,6 +13,7 @@ import {
   dataMainFeatures,
   dataOurPartners,
   dataPoweredPlatforms,
+  dataPressReleases,
 } from '~/data';
 
 import type { FunctionComponent } from 'react';
@@ -30,6 +31,7 @@ export const HomeStory: FunctionComponent<HomeStoryProps> = () => {
       <StoryRoadmap />
       <StoryOurPartners />
       <StoryPoweredPlatforms />
+      <StoryPressReleases />
       <StorySubscribe />
     </div>
   );
@@ -346,6 +348,34 @@ export const StoryPoweredPlatforms = () => {
                   className="max-h-[100px] max-w-[250px]"
                   alt={platform.name}
                   src={platformImageUrl}
+                />
+              </Anchor>
+            );
+          })}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+/**
+ * Story Press Releases
+ */
+export const StoryPressReleases = () => {
+  // const { isLight } = useTheme();
+
+  return (
+    <div id="home-story-powered-platforms">
+      <div className="box-story">
+        <H2>As Seen On</H2>
+        <div className="flex flex-wrap items-center justify-center gap-8">
+          {dataPressReleases.map((item) => {
+            return (
+              <Anchor key={item.name} href={item.url}>
+                <Image
+                  className="max-h-[100px] max-w-[250px]"
+                  alt={item.name}
+                  src={item.imageUrl}
                 />
               </Anchor>
             );
