@@ -1,29 +1,39 @@
-import { useActionData, useTransition } from 'remix';
-
-import { Anchor, Layout } from '~/components';
-import { PrivateSaleForm } from '~/contents';
+import { LayoutSpecial } from '~/components';
+import {
+  PrivateSaleHero,
+  StoryOurPartners,
+  StoryPoweredPlatforms,
+  StoryPressReleases,
+  StoryPrivateSaleForm,
+  StoryRoadmap,
+  StoryTokenomics,
+} from '~/contents';
 import { actionSubscribe } from '~/features';
 
+import type { SEOHandle } from '@balavishnuvj/remix-seo';
 import type { ActionFunction } from 'remix';
+
+export const handle: SEOHandle = {
+  getSitemapEntries: async () => {
+    return [{ route: `/privatesale`, priority: 0.9 }];
+  },
+};
 
 export const action: ActionFunction = actionSubscribe;
 
 export default function PrivateSaleRoute() {
-  const transition = useTransition();
-  const actionData = useActionData();
-
   return (
-    <Layout className="prose-config">
-      <h1 className="font-accent text-primary-500">Private Sale</h1>
-      <p>
-        The token private sale is opening soon. For now, please subscribe here
-        for updates. As you will be invited through email. You can also{' '}
-        <Anchor href="https://poinswap.com/discord">join our Discord</Anchor> to
-        get the updates, but we'll prioritize the ones who subscribe their email
-        first.
-      </p>
-
-      <PrivateSaleForm transition={transition} actionData={actionData} />
-    </Layout>
+    <LayoutSpecial>
+      <PrivateSaleHero />
+      <div className="flex flex-col items-center gap-20 px-4 md:px-8">
+        <StoryPrivateSaleForm />
+        <StoryTokenomics />
+        <StoryRoadmap />
+        <StoryOurPartners />
+        <StoryPoweredPlatforms />
+        <StoryPressReleases />
+        <StoryPrivateSaleForm />
+      </div>
+    </LayoutSpecial>
   );
 }

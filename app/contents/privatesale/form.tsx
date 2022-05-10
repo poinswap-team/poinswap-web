@@ -8,15 +8,18 @@ import {
 import { Form } from 'remix';
 
 import { Button } from '~/components';
+import { classx } from '~/utils';
 
 import type { FunctionComponent } from 'react';
 
 interface PrivateSaleFormProps {
+  className?: string;
   transition: any;
   actionData: any;
 }
 
 export const PrivateSaleForm: FunctionComponent<PrivateSaleFormProps> = ({
+  className,
   transition,
   actionData,
 }) => {
@@ -32,8 +35,8 @@ export const PrivateSaleForm: FunctionComponent<PrivateSaleFormProps> = ({
   };
 
   return (
-    <div className="flex justify-center">
-      <div className="w-full max-w-xs">
+    <div className={classx('flex w-full', className)}>
+      <div className="prose-config w-full max-w-xs">
         {/* Form inputs */}
         <Form method="post">
           <div className="space-y-4">

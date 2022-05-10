@@ -23,7 +23,6 @@ interface HomeStoryProps {}
 export const HomeStory: FunctionComponent<HomeStoryProps> = () => {
   return (
     <div className="flex flex-col space-y-8 px-4 md:px-8">
-      {/* <StoryIntro /> */}
       <StoryStart />
       <StoryFeatures />
       <StoryReasons />
@@ -37,18 +36,6 @@ export const HomeStory: FunctionComponent<HomeStoryProps> = () => {
   );
 };
 
-export const StoryIntro = () => {
-  return (
-    <div id="home-story-intro">
-      <div className="flex justify-center">
-        <h2 className="font-accent text-center text-3xl">
-          (Stay tuned. We are revamping the homepage)
-        </h2>
-      </div>
-    </div>
-  );
-};
-
 /**
  * Story Start
  */
@@ -56,10 +43,7 @@ export const StoryStart = () => {
   const { isLight } = useTheme();
 
   return (
-    <div
-      id="home-story-start"
-      className="flex w-full flex-col gap-4 lg:flex-row"
-    >
+    <div id="story-start" className="flex w-full flex-col gap-4 lg:flex-row">
       <div
         className="comic-box flex min-h-[500px] flex-1 flex-col items-center justify-center gap-1 space-y-4 bg-cover bg-center p-8"
         style={{
@@ -115,9 +99,9 @@ export const StoryStart = () => {
 /**
  * Story Features
  */
-const StoryFeatures = () => {
+export const StoryFeatures = () => {
   return (
-    <div id="home-story-features">
+    <div id="story-features">
       <div className="flex flex-col items-center gap-8 p-12">
         <h2 className="font-accent text-center text-3xl">Main Features</h2>
         <div className="flex flex-col flex-wrap justify-center gap-8 sm:flex-row">
@@ -146,14 +130,11 @@ const StoryFeatures = () => {
 /**
  * Story Reasons
  */
-const StoryReasons = () => {
+export const StoryReasons = () => {
   const { isLight } = useTheme();
 
   return (
-    <div
-      id="home-story-reasons"
-      className="flex w-full flex-col gap-4 lg:flex-row"
-    >
+    <div id="story-reasons" className="flex w-full flex-col gap-4 lg:flex-row">
       <div
         className="comic-box flex min-h-[500px] flex-1 flex-col items-start justify-center gap-1 space-y-4 bg-cover bg-center p-8"
         style={{
@@ -194,11 +175,11 @@ const StoryReasons = () => {
 /**
  * Story Tokenomics
  */
-const StoryTokenomics = () => {
+export const StoryTokenomics = () => {
   const { isLight } = useTheme();
 
   return (
-    <div id="home-story-tokenomics">
+    <div id="story-tokenomics">
       <div className="flex flex-col items-center justify-center gap-1 space-y-4 p-8">
         <h2 className="font-accent text-center text-3xl">Tokenomics</h2>
         <div className="flex flex-col items-center gap-8 lg:flex-row">
@@ -237,11 +218,11 @@ const StoryTokenomics = () => {
 /**
  * Story Roadmap
  */
-const StoryRoadmap = () => {
+export const StoryRoadmap = () => {
   const { isLight } = useTheme();
 
   return (
-    <div id="home-story-roadmap">
+    <div id="story-roadmap">
       <div
         className="flex min-h-[720px] flex-[2] flex-col items-center justify-center gap-1 space-y-4 bg-cover bg-center bg-no-repeat p-12"
         style={{
@@ -301,7 +282,7 @@ export const StoryOurPartners = () => {
   const { isLight } = useTheme();
 
   return (
-    <div id="home-story-our-partners">
+    <div id="story-our-partners">
       <div className="box-story">
         <H2>Our Partners</H2>
         <div className="flex flex-wrap items-center justify-center gap-8">
@@ -333,7 +314,7 @@ export const StoryPoweredPlatforms = () => {
   const { isLight } = useTheme();
 
   return (
-    <div id="home-story-powered-platforms">
+    <div id="story-powered-platforms">
       <div className="box-story">
         <H2>Powered By</H2>
         <div className="flex flex-wrap items-center justify-center gap-8">
@@ -365,7 +346,7 @@ export const StoryPressReleases = () => {
   // const { isLight } = useTheme();
 
   return (
-    <div id="home-story-powered-platforms">
+    <div id="story-powered-platforms">
       <div className="box-story">
         <H2>As Seen On</H2>
         <div className="flex flex-wrap items-center justify-center gap-8">
@@ -389,11 +370,11 @@ export const StoryPressReleases = () => {
 /**
  * Story Subscribe
  */
-const StorySubscribe = () => {
+export const StorySubscribe = () => {
   return (
-    <div id="home-story-subscribe">
+    <div id="story-subscribe">
       <div className="flex flex-col items-center justify-center gap-1 space-y-4 p-8">
-        <H2>Subscribe for updates</H2>
+        <H2>Join our community</H2>
         <Image
           height={300}
           className="max-h-[300px]"
