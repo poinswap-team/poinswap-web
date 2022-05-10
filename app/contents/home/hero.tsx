@@ -21,9 +21,9 @@ export const HomeHero: FunctionComponent<HomeHeroProps> = () => {
     >
       <div id="home-hero-box-characters" className="px-4">
         <div className="comic-box-transparent mt-32 flex flex-col space-y-4 p-5 sm:mt-28">
-          <h1 className="max-w-[36ch] text-2xl font-bold leading-normal sm:text-center md:text-4xl ">
-            Pioneering RetailFi with user friendly and curated Crypto
-            Decentralized Exchange (DEX)
+          <h1 className="max-w-[36ch] text-2xl font-bold leading-normal sm:text-center md:text-4xl md:leading-normal">
+            Poinswap is building an ecosystem for retailers on Avalanche with
+            user-friendly and curated Decentralized Exchange (DEX)
           </h1>
 
           <section className="flex-section gap-2 sm:justify-center sm:gap-4">

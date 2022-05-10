@@ -91,7 +91,7 @@ export const StoryStart = () => {
         }}
       >
         <ComicSpeech>
-          We are a tech enabler for retailers to join the blockchain revolution
+          We are tech enablers for retailers to join the blockchain revolution
         </ComicSpeech>
         <ImageInteractive
           alt="Gary Vee Slime"
@@ -100,7 +100,10 @@ export const StoryStart = () => {
           width={200}
         />
         <ComicSpeech>
-          by tokenizing point rewards through <LogoSpan /> DeFi protocols
+          By tokenizing point rewards and whitelisting subnets, powered by{' '}
+          <Anchor className="text-primary-500" href="https://avax.network/">
+            Avalance (AVAX)
+          </Anchor>
         </ComicSpeech>
       </div>
     </div>

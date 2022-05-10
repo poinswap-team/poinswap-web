@@ -2,7 +2,7 @@ export const configMetaDefault = {
   name: 'Poinswap',
   title: 'Poinswap - Pioneering RetailFi',
   description:
-    'Poinswap is pioneering RetailFi with user-friendly and curated decentralized platform. Buy metaverse token with your friendly neighborhood DEX.',
+    'Poinswap is building an ecosystem for retailers on Avalanche (AVAX) with user-friendly and curated Decentralized Exchange (DEX) #shoptoearn',
   url: 'https://poinswap.com/',
   route: '',
   color: '#0081f1',
