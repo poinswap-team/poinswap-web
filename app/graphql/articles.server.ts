@@ -7,7 +7,11 @@ export const FRAGMENT_ARTICLE = gql`
     slug
     date
     coverImage {
-      url
+      url(
+        transformation: {
+          image: { resize: { width: 1200, height: 800, fit: clip } }
+        }
+      )
     }
     youtubeVideoId
     summary

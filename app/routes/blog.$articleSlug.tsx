@@ -62,7 +62,11 @@ export default function BlogArticlePage() {
   return (
     <Layout className="prose-config">
       {article?.coverImage && (
-        <Image src={article?.coverImage?.url} alt={article?.title} />
+        <Image
+          className="rounded-md"
+          src={article?.coverImage?.url}
+          alt={article?.title}
+        />
       )}
       <h1>{article?.title}</h1>
       <div>{parse(String(article?.content?.html))}</div>
