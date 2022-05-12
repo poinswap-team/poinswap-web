@@ -9,6 +9,7 @@ import {
   RemixLink,
   useTheme,
 } from '~/components';
+import { VideoIntro } from '~/contents';
 import {
   dataMainFeatures,
   dataOurPartners,
@@ -22,10 +23,11 @@ interface HomeStoryProps {}
 
 export const HomeStory: FunctionComponent<HomeStoryProps> = () => {
   return (
-    <div className="flex flex-col space-y-8 px-4 md:px-8">
+    <div className="flex flex-col gap-12 px-4 md:px-8">
       <StoryStart />
       <StoryFeatures />
       <StoryReasons />
+      <StoryVideoIntro />
       <StoryTokenomics />
       <StoryRoadmap />
       <StoryOurPartners />
@@ -45,7 +47,7 @@ export const StoryStart = () => {
   return (
     <div id="story-start" className="flex w-full flex-col gap-4 lg:flex-row">
       <div
-        className="comic-box flex min-h-[500px] flex-1 flex-col items-center justify-center gap-1 space-y-4 bg-cover bg-center p-8"
+        className="comic-box flex min-h-[500px] flex-1 flex-col items-center justify-center gap-1 space-y-8 bg-cover bg-center p-8"
         style={{
           backgroundImage: `url("${
             isLight
@@ -67,7 +69,7 @@ export const StoryStart = () => {
       </div>
 
       <div
-        className="comic-box flex min-h-[500px] flex-[2] flex-col items-center justify-center gap-1 space-y-4 bg-cover p-8"
+        className="comic-box flex min-h-[500px] flex-[2] flex-col items-center justify-center gap-1 space-y-8 bg-cover p-8"
         style={{
           backgroundImage: `url("${
             isLight
@@ -92,6 +94,20 @@ export const StoryStart = () => {
           </Anchor>
         </ComicSpeech>
       </div>
+    </div>
+  );
+};
+
+/**
+ * Story Video Intro
+ */
+export const StoryVideoIntro = () => {
+  return (
+    <div id="story-video-intro">
+      <div className="flex flex-col items-center gap-8 p-12">
+        <h2 className="font-accent text-center text-3xl">Watch Trailer</h2>
+      </div>
+      <VideoIntro />
     </div>
   );
 };
@@ -136,7 +152,7 @@ export const StoryReasons = () => {
   return (
     <div id="story-reasons" className="flex w-full flex-col gap-4 lg:flex-row">
       <div
-        className="comic-box flex min-h-[500px] flex-1 flex-col items-start justify-center gap-1 space-y-4 bg-cover bg-center p-8"
+        className="comic-box flex min-h-[500px] flex-1 flex-col items-start justify-center gap-1 space-y-8 bg-cover bg-center p-8"
         style={{
           backgroundImage: `url("${
             isLight
@@ -180,7 +196,7 @@ export const StoryTokenomics = () => {
 
   return (
     <div id="story-tokenomics">
-      <div className="flex flex-col items-center justify-center gap-1 space-y-4 p-8">
+      <div className="flex flex-col items-center justify-center gap-1 space-y-8 p-8">
         <h2 className="font-accent text-center text-3xl">Tokenomics</h2>
         <div className="flex flex-col items-center gap-8 lg:flex-row">
           <Image
@@ -224,7 +240,7 @@ export const StoryRoadmap = () => {
   return (
     <div id="story-roadmap">
       <div
-        className="flex min-h-[720px] flex-[2] flex-col items-center justify-center gap-1 space-y-4 bg-cover bg-center bg-no-repeat p-12"
+        className="flex min-h-[720px] flex-[2] flex-col items-center justify-center gap-1 space-y-8 bg-cover bg-center bg-no-repeat p-12"
         style={{
           backgroundImage: `url("${
             isLight
@@ -373,7 +389,7 @@ export const StoryPressReleases = () => {
 export const StorySubscribe = () => {
   return (
     <div id="story-subscribe">
-      <div className="flex flex-col items-center justify-center gap-1 space-y-4 p-8">
+      <div className="flex flex-col items-center justify-center gap-1 space-y-8 p-8 text-center">
         <H2>Join our community</H2>
         <Image
           height={300}
