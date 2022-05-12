@@ -1,6 +1,7 @@
 import { LayoutSpecial } from '~/components';
 import {
   PrivateSaleHero,
+  StoryFAQ,
   StoryOurPartners,
   StoryPoweredPlatforms,
   StoryPressReleases,
@@ -32,6 +33,7 @@ export default function PrivateSaleRoute() {
         <StoryOurPartners />
         <StoryPoweredPlatforms />
         <StoryPressReleases />
+        <StoryFAQ />
         <StoryPrivateSaleForm />
       </div>
     </LayoutSpecial>

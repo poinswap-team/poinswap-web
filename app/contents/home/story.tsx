@@ -238,7 +238,7 @@ export const StoryRoadmap = () => {
   const { isLight } = useTheme();
 
   return (
-    <div id="story-roadmap">
+    <div id="story-roadmap" className="w-full">
       <div
         className="flex min-h-[720px] flex-[2] flex-col items-center justify-center gap-1 space-y-8 bg-cover bg-center bg-no-repeat p-12"
         style={{
