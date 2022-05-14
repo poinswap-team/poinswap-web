@@ -4,14 +4,13 @@ Primary website of Poinswap.
 
 - Production: [poinswap.com](https://poinswap.com)
 - Preview: [v2.poinswap.com](https://v2.poinswap.com)
+- Staging: [staging.poinswap.com](https://staging.poinswap.com)
 
 Features:
 
 - Remix as the React framework
 - Tailwind CSS using Vechai UI as primary components
 - Theme switcher and persist theme with a session cookie
-
-![Screenshot](public/screenshot.png)
 
 ## Stacks
 
