@@ -23,17 +23,19 @@ export const handle: SEOHandle = {
 export const meta: MetaFunction = ({ data }) => {
   const { article } = data;
 
-  if (!article.title) {
+  if (article) {
     return createMetaData({
-      title: `Blog article not found — Poinswap`,
-      description: 'Sorry this is not the article you are looking for.',
+      title: `${article?.title} — Poinswap Blog`,
+      description: article?.summary,
+      ogImageUrl: article?.coverImage?.url,
+      route: `blog/${article.slug}`,
     });
   }
 
   return createMetaData({
-    title: `${article?.title} — Poinswap Blog`,
-    description: article?.summary,
-    ogImageUrl: article?.coverImage?.url,
+    title: `Blog article not found — Poinswap`,
+    description: 'Sorry this is not the article you are looking for.',
+    route: 'blog',
   });
 };
 
