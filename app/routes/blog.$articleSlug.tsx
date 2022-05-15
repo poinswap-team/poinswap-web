@@ -4,6 +4,7 @@ import { json, redirect, useLoaderData } from 'remix';
 import { Image, Layout } from '~/components';
 import { QUERY_ALL_ARTICLES, QUERY_ONE_ARTICLE_BY_SLUG } from '~/graphql';
 import { graphcmsClient } from '~/lib';
+import { createMetaData } from '~/utils';
 
 import type { LoaderFunction, MetaFunction } from 'remix';
 import type { SEOHandle } from '~/utils';
@@ -22,18 +23,18 @@ export const handle: SEOHandle = {
 export const meta: MetaFunction = ({ data }) => {
   const { article } = data;
 
-  if (!article) {
-    return {
+  if (!article.title) {
+    return createMetaData({
       title: `Blog article not found — Poinswap`,
       description: 'Sorry this is not the article you are looking for.',
-    };
+    });
   }
 
-  return {
+  return createMetaData({
     title: `${article?.title} — Poinswap Blog`,
     description: article?.summary,
-    'og:image': article?.coverImage?.url,
-  };
+    ogImageUrl: article?.coverImage?.url,
+  });
 };
 
 export const loader: LoaderFunction = async ({ params }) => {

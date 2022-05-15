@@ -13,20 +13,18 @@ type CreateMeta = {
   locale?: string;
 };
 
-export const createMetaData = (meta = configMetaDefault) => {
-  const {
-    title,
-    description,
-    name,
-    color,
-    ogImageAlt,
-    ogImageUrl,
-    twiterImageUrl,
-    url,
-    route,
-    locale,
-  }: CreateMeta = meta;
-
+export const createMetaData = ({
+  title,
+  description,
+  name,
+  color,
+  ogImageAlt,
+  ogImageUrl,
+  twiterImageUrl,
+  url,
+  route,
+  locale,
+}: CreateMeta = configMetaDefault) => {
   return {
     title: title || name || configMetaDefault.title,
     description: description || configMetaDefault.description,
@@ -46,9 +44,8 @@ export const createMetaData = (meta = configMetaDefault) => {
       : url || configMetaDefault.url,
     'og:image:alt': ogImageAlt || title || configMetaDefault.ogImageAlt,
     'og:image:type': configMetaDefault.ogImageType || 'image/jpeg',
-    'og:image': ogImageUrl
-      ? configMetaDefault.url + ogImageUrl
-      : configMetaDefault.url + configMetaDefault.ogImageUrl,
+    'og:image':
+      ogImageUrl || configMetaDefault.url + configMetaDefault.ogImageUrl,
 
     'twitter:card': 'summary_large_image',
     'twitter:site': '@poinswap',
