@@ -23,8 +23,6 @@ export const handle: SEOHandle = {
 export const meta: MetaFunction = ({ data }) => {
   const { article } = data;
 
-  console.log({ article });
-
   if (article) {
     return createMetaData({
       title: `${article.title} — Poinswap Blog`,
