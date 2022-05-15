@@ -1,6 +1,9 @@
+import { json } from 'remix';
+
 import { LayoutSpecial } from '~/components';
 import {
   PrivateSaleHero,
+  StoryFAQ,
   StoryOurPartners,
   StoryPoweredPlatforms,
   StoryPressReleases,
@@ -8,10 +11,11 @@ import {
   StoryRoadmap,
   StoryTokenomics,
 } from '~/contents';
+import { dataFAQsPrivateSale } from '~/data';
 import { actionSubscribe } from '~/features';
 
 import type { SEOHandle } from '@balavishnuvj/remix-seo';
-import type { ActionFunction } from 'remix';
+import type { ActionFunction, LoaderFunction } from 'remix';
 
 export const handle: SEOHandle = {
   getSitemapEntries: async () => {
@@ -20,6 +24,12 @@ export const handle: SEOHandle = {
 };
 
 export const action: ActionFunction = actionSubscribe;
+
+export const loader: LoaderFunction = async () => {
+  return json({
+    faqs: dataFAQsPrivateSale,
+  });
+};
 
 export default function PrivateSaleRoute() {
   return (
@@ -32,6 +42,7 @@ export default function PrivateSaleRoute() {
         <StoryOurPartners />
         <StoryPoweredPlatforms />
         <StoryPressReleases />
+        <StoryFAQ />
         <StoryPrivateSaleForm />
       </div>
     </LayoutSpecial>

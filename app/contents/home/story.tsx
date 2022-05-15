@@ -105,7 +105,7 @@ export const StoryVideoIntro = () => {
   return (
     <div id="story-video-intro">
       <div className="flex flex-col items-center gap-8 p-12">
-        <h2 className="font-accent text-center text-3xl">Watch Trailer</h2>
+        <H2>Watch Trailer</H2>
       </div>
       <VideoIntro />
     </div>
@@ -119,7 +119,7 @@ export const StoryFeatures = () => {
   return (
     <div id="story-features">
       <div className="flex flex-col items-center gap-8 p-12">
-        <h2 className="font-accent text-center text-3xl">Main Features</h2>
+        <H2>Main Features</H2>
         <div className="flex flex-col flex-wrap justify-center gap-8 sm:flex-row">
           {dataMainFeatures.map((feature) => {
             return (
@@ -197,7 +197,7 @@ export const StoryTokenomics = () => {
   return (
     <div id="story-tokenomics">
       <div className="flex flex-col items-center justify-center gap-1 space-y-8 p-8">
-        <h2 className="font-accent text-center text-3xl">Tokenomics</h2>
+        <H2>Tokenomics</H2>
         <div className="flex flex-col items-center gap-8 lg:flex-row">
           <Image
             className="max-h-[400px]"
@@ -238,7 +238,7 @@ export const StoryRoadmap = () => {
   const { isLight } = useTheme();
 
   return (
-    <div id="story-roadmap">
+    <div id="story-roadmap" className="w-full">
       <div
         className="flex min-h-[720px] flex-[2] flex-col items-center justify-center gap-1 space-y-8 bg-cover bg-center bg-no-repeat p-12"
         style={{
@@ -249,7 +249,7 @@ export const StoryRoadmap = () => {
           }")`,
         }}
       >
-        <h2 className="font-accent hidden text-center text-3xl">Roadmap</h2>
+        <H2>Roadmap</H2>
         <div className="flex flex-col gap-8 md:flex-row">
           <ComicBox className="flex w-full max-w-[320px] flex-col gap-4 p-4">
             <h3 className="font-accent text-4xl font-bold">Q2 2022</h3>
@@ -390,7 +390,7 @@ export const StorySubscribe = () => {
   return (
     <div id="story-subscribe">
       <div className="flex flex-col items-center justify-center gap-1 space-y-8 p-8 text-center">
-        <H2>Join our community</H2>
+        <H2>Join Our Community</H2>
         <Image
           height={300}
           className="max-h-[300px]"

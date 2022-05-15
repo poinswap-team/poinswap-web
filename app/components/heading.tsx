@@ -4,7 +4,7 @@ import type { FunctionComponent } from 'react';
 
 const headingStyles = {
   h1: 'text-5xl font-extrabold',
-  h2: 'text-3xl font-bold',
+  h2: 'text-4xl font-bold',
   h3: 'text-xl font-semibold',
   h4: 'text-lg font-semibold',
   h5: 'text-md font-medium',
