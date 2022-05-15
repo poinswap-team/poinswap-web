@@ -56,11 +56,11 @@ export default function BlogRoute() {
           return (
             <RemixLink key={article?.id} to={article?.slug}>
               <div className="flex flex-col">
-                {article?.coverImage && (
+                {article.coverImage && (
                   <Image
                     className="rounded-md"
-                    src={article?.coverImage?.url}
-                    alt={article?.title}
+                    src={article.coverImage.url}
+                    alt={article.title}
                   />
                 )}
                 <h2 className="mt-0 text-2xl font-bold md:text-3xl">

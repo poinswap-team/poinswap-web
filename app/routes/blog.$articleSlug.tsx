@@ -23,11 +23,13 @@ export const handle: SEOHandle = {
 export const meta: MetaFunction = ({ data }) => {
   const { article } = data;
 
+  console.log({ article });
+
   if (article) {
     return createMetaData({
-      title: `${article?.title} — Poinswap Blog`,
-      description: article?.summary,
-      ogImageUrl: article?.coverImage?.url,
+      title: `${article.title} — Poinswap Blog`,
+      description: article.summary,
+      ogImageUrl: article.coverImage && article.coverImage.url,
       route: `blog/${article.slug}`,
     });
   }
