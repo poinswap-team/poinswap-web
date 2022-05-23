@@ -93,3 +93,21 @@
     content: '';
   }
 }
+
+@layer utilities {
+  .bg-home-light {
+    background-image: url('/assets/backgrounds/hero-light.png');
+  }
+
+  .bg-home-dark {
+    background-image: url('/assets/backgrounds/hero-dark.png');
+  }
+
+  .bg-home-light-small {
+    background-image: url('/assets/backgrounds/hero-light-small.png');
+  }
+
+  .bg-home-dark-small {
+    background-image: url('/assets/backgrounds/hero-dark-small.png');
+  }
+}
