@@ -1,7 +1,7 @@
 import { RemixLink, useTheme, Image } from '~/components';
+import { classx } from '~/utils';
 
 import type { FunctionComponent } from 'react';
-import { classx } from '~/utils';
 
 interface HomeHeroProps {}
 
@@ -12,18 +12,23 @@ export const HomeHero: FunctionComponent<HomeHeroProps> = () => {
     <div
       id="home-hero"
       className={classx(
-        'mb-32 flex h-[650px] items-start justify-center',
+        'mb-14 flex h-[650px] items-start justify-center',
         'bg-cover',
         'bg-home-light-small dark:bg-home-dark-small',
         'sm:bg-home-light sm:dark:bg-home-dark'
       )}
     >
       <div id="home-hero-box-characters" className="px-4">
-        <div className="mt-28 flex flex-col space-y-4 p-5">
-          <h1 className="max-w-[36ch] text-2xl font-bold leading-normal sm:text-center md:text-4xl md:leading-normal">
-            Poinswap is building an ecosystem for retailers on Avalanche with
-            user-friendly and curated Decentralized Exchange (DEX)
-          </h1>
+        <div className="mt-20 flex flex-col space-y-5 p-5">
+          <header className="stack gap-5 sm:text-center">
+            <h1 className="max-w-[36ch] text-2xl font-bold leading-normal  md:text-4xl ">
+              The first DeFi hub for Retail
+            </h1>
+            <h2 className="max-w-[36ch] text-lg md:text-2xl">
+              Poinswap is building the RetailFi ecosystem on Avalanche with
+              user-friendly and curated Decentralized Exchange (DEX)
+            </h2>
+          </header>
 
           <section className="flex-section gap-2 sm:justify-center sm:gap-4">
             <RemixLink
@@ -43,7 +48,7 @@ export const HomeHero: FunctionComponent<HomeHeroProps> = () => {
           </section>
         </div>
 
-        <div className="flex justify-center pt-20 md:pt-10">
+        <div className="flex justify-center pt-20 md:pt-6">
           <div className="flex space-x-2 self-end">
             <Image
               alt="Slime Outfit"
