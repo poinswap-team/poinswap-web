@@ -7,19 +7,19 @@ export const dataFAQs = [
 
 export const dataFAQsPrivateSale = [
   {
-    q: 'Is Poinswap Legit?',
+    q: 'Is Poinswap legit?',
     a: 'Yes, we are legit, we are an incorporated company and have legal standing in our country. We are based in SEA region.',
   },
   {
-    q: 'What is the minimum & maximum purchase for private sale?',
-    a: 'We know the market is not doing good right now, so we put a minimum purchase of $50 USDT and a maximum is $5,000 USDT per wallet',
+    q: 'What is the minimum and maximum purchase for private sale?',
+    a: 'We know the market is not doing good right now, so we put a minimum purchase of 100 BUSD and a maximum is 5,000 BUSD per wallet',
   },
   {
     q: 'What currency and chain do you accept for payment?',
-    a: 'We accept BNB, ETH, USDT, USDC, BUSD, AVAX',
+    a: 'We accept USDT, BUSD, BNB, AVAX',
   },
   {
-    q: 'How do i buy the private sale?',
+    q: 'How do I buy the token in the private sale?',
     a: 'Our team will send you an email with the purchase form personally',
   },
   {
