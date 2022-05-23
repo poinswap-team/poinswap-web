@@ -19,6 +19,14 @@
 }
 
 @layer components {
+  .btn {
+    @apply font-bold;
+  }
+
+  .btn-outline[data-color='primary'] {
+    @apply bg-neutral-50;
+  }
+
   .stack {
     @apply flex flex-col;
   }
