@@ -9,7 +9,7 @@ import {
   StoryPressReleases,
   StoryPrivateSaleForm,
   StoryRoadmap,
-  StoryTokenomics,
+  CommonTokenomics,
 } from '~/contents';
 import { dataFAQsPrivateSale } from '~/data';
 import { actionSubscribe } from '~/features';
@@ -37,7 +37,7 @@ export default function PrivateSaleRoute() {
       <PrivateSaleHero />
       <div className="flex flex-col items-center gap-20 px-4 md:px-8">
         <StoryPrivateSaleForm />
-        <StoryTokenomics />
+        <CommonTokenomics />
         <StoryRoadmap />
         <StoryOurPartners />
         <StoryPoweredPlatforms />

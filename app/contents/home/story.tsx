@@ -9,7 +9,7 @@ import {
   RemixLink,
   useTheme,
 } from '~/components';
-import { PrivateSaleSchedule, VideoIntro } from '~/contents';
+import { CommonTokenomics, PrivateSaleSchedule, VideoIntro } from '~/contents';
 import {
   dataMainFeatures,
   dataOurPartners,
@@ -29,7 +29,7 @@ export const HomeStory: FunctionComponent<HomeStoryProps> = () => {
       <StoryFeatures />
       <StoryReasons />
       <StoryVideoIntro />
-      <StoryTokenomics />
+      <CommonTokenomics />
       <StoryRoadmap />
       <StoryOurPartners />
       <StoryPoweredPlatforms />
