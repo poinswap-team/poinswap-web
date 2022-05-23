@@ -9,7 +9,7 @@ import {
   RemixLink,
   useTheme,
 } from '~/components';
-import { VideoIntro } from '~/contents';
+import { PrivateSaleSchedule, VideoIntro } from '~/contents';
 import {
   dataMainFeatures,
   dataOurPartners,
@@ -24,6 +24,7 @@ interface HomeStoryProps {}
 export const HomeStory: FunctionComponent<HomeStoryProps> = () => {
   return (
     <div className="flex flex-col gap-12 px-4 md:px-8">
+      <PrivateSaleSchedule />
       <StoryStart />
       <StoryFeatures />
       <StoryReasons />

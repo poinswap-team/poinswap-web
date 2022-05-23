@@ -19,6 +19,10 @@
 }
 
 @layer components {
+  .stack {
+    @apply flex flex-col;
+  }
+
   .prose-config {
     @apply prose dark:prose-invert md:prose-lg;
     @apply prose-h1:leading-normal prose-h2:leading-normal;
