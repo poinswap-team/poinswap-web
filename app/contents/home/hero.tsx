@@ -20,7 +20,7 @@ export const HomeHero: FunctionComponent<HomeHeroProps> = () => {
     >
       <div id="home-hero-box-characters" className="px-4">
         <div className="mt-20 flex flex-col space-y-5 p-5">
-          <header className="stack gap-5 sm:text-center">
+          <header className="stack gap-5">
             <h1 className="max-w-[36ch] text-2xl font-bold leading-normal  md:text-4xl ">
               The first DeFi hub for retail
             </h1>
@@ -30,7 +30,7 @@ export const HomeHero: FunctionComponent<HomeHeroProps> = () => {
             </h2>
           </header>
 
-          <section className="flex-section gap-2 sm:justify-center sm:gap-4">
+          <section className="flex-section gap-2 sm:gap-4">
             <RemixLink
               to="/blog"
               className="btn btn-lg btn-solid rounded-base"
