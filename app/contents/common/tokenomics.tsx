@@ -18,7 +18,7 @@ export const CommonTokenomics = () => {
           }
         />
 
-        <section className="flex max-w-lg flex-col gap-10 text-lg">
+        <section className="flex max-w-lg flex-col gap-5 text-lg">
           <p>
             Poinswap tokenomics will distributed heavily for Community rewards
             and ecosystem. To make sure the project is sustainable, fair amount
@@ -33,38 +33,35 @@ export const CommonTokenomics = () => {
             </p>
           </div>
           <div>
-            <ul className="list-items space-y-2">
+            <p>For community</p>
+            <ul className="list-items">
               <li>
-                Staking and Ecosystem: <b>40%</b>
+                <b>Staking and Ecosystem:</b> 40%
               </li>
               <li>
-                Team and Future Team: <b>20%</b>
+                <b>Private Sale, IDO, Airdrop:</b> 10%
               </li>
               <li>
-                VC and Advisors: <b>21%</b>
-              </li>
-              <li>
-                Private Sale, IDO, Airdrop: <b>10%</b>
-              </li>
-              <li>
-                Inflation and Reserve: <b>9%</b>
+                <b>Inflation and Reserve:</b> 9%
               </li>
             </ul>
           </div>
           <div>
             <p>For investors and team</p>
-            <p>
-              <b>VC:</b> 19%
-            </p>
-            <p>
-              <b>Team:</b> 13%
-            </p>
-            <p>
-              <b>Future team:</b> 7%
-            </p>
-            <p>
-              <b>Advisors:</b> 2%
-            </p>
+            <ul className="list-items">
+              <li>
+                <b>VC:</b> 19%
+              </li>
+              <li>
+                <b>Team:</b> 13%
+              </li>
+              <li>
+                <b>Future team:</b> 7%
+              </li>
+              <li>
+                <b>Advisors:</b> 2%
+              </li>
+            </ul>
           </div>
         </section>
       </div>
