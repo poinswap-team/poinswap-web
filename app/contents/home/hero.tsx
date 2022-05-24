@@ -18,8 +18,11 @@ export const HomeHero: FunctionComponent<HomeHeroProps> = () => {
         'sm:bg-home-light sm:dark:bg-home-dark'
       )}
     >
-      <div id="home-hero-box-characters" className="px-4">
-        <div className="mt-20 flex flex-col space-y-5 p-5">
+      <div
+        id="home-hero-box-characters"
+        className="flex flex-col gap-10 px-4 lg:h-[580px] lg:flex-row"
+      >
+        <div className="mt-20 flex flex-col space-y-5 p-5 lg:mt-32">
           <header className="stack gap-5">
             <h1 className="max-w-[36ch] text-2xl font-bold leading-normal  md:text-4xl ">
               The first DeFi hub for retail
@@ -48,7 +51,7 @@ export const HomeHero: FunctionComponent<HomeHeroProps> = () => {
           </section>
         </div>
 
-        <div className="flex justify-center pt-20 md:pt-6">
+        <div className="flex justify-center pt-20 sm:pt-5 md:pt-0 lg:pt-80">
           <div className="flex space-x-2 self-end">
             <Image
               alt="Slime Outfit"
