@@ -22,7 +22,7 @@ export const HomeHero: FunctionComponent<HomeHeroProps> = () => {
         <div className="mt-20 flex flex-col space-y-5 p-5">
           <header className="stack gap-5 sm:text-center">
             <h1 className="max-w-[36ch] text-2xl font-bold leading-normal  md:text-4xl ">
-              The first DeFi hub for Retail
+              The first DeFi hub for retail
             </h1>
             <h2 className="max-w-[36ch] text-lg md:text-2xl">
               Poinswap is building the RetailFi ecosystem on Avalanche with

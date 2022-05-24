@@ -91,7 +91,7 @@ export const StoryStart = () => {
         <ComicSpeech>
           By tokenizing point rewards and whitelisting subnets, powered by{' '}
           <Anchor className="text-primary-500" href="https://avax.network/">
-            Avalance (AVAX)
+            Avalanche (AVAX)
           </Anchor>
         </ComicSpeech>
       </div>
@@ -401,7 +401,7 @@ export const StorySubscribe = () => {
         <section className="flex-section justify-center space-x-2">
           <Anchor
             href="https://poinswap.com/discord"
-            className="btn btn-lg btn-solid rounded-base"
+            className="btn-solid btn btn-lg rounded-base"
             data-color="primary"
           >
             Join our Discord server
