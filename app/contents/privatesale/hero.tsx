@@ -16,8 +16,8 @@ export const PrivateSaleHero: FunctionComponent<PrivateSaleHeroProps> = () => {
         <H1 className="font-accent text-primary-500">Poinswap Private Sale</H1>
         <P>
           Poinswap is pioneering RetailFi by building an ecosystem for retailers
-          with user friendly and curated DEX. Poinswap is bootstraping and
-          expected to launch IDO on Q3 2022.{' '}
+          with user friendly and curated DEX. Poinswap is expecting to launch
+          the IDO on Q3 2022.{' '}
         </P>
         <P>
           Poinswap is a tech enabler for retailers to join the blockchain
